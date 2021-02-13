@@ -4,17 +4,45 @@ import Death from './Death';
 import Active from './Active';
 import Recovered from './Recovered';
 
- class GlobalStatus extends Component {
+class GlobalStatus extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            data: false
+        }
+    }
+    componentDidMount() {
+        this.getData();
+    }
+
+    getData = async () => {
+        let data = await fetch('https://api.coronatracker.com/v3/stats/worldometer/global')
+        data = await data.json()
+        console.log(data)
+        this.setState({
+            data
+        })
+    }
+
     render() {
-        const cls="";
-        const hCls="text-gray-100 text-2xl ";
+        console.log(this.state)
+        const { created, totalActiveCases, totalCasesPerMillionPop, totalConfirmed, totalDeaths, totalNewCases, totalNewDeaths, totalRecovered } = this.state.data
+        const cls = "grid grid-cols-3 text-white gap-4";
+        const hCls = "text-gray-100 text-2xl ";
+
+
+
+        const preCls="col-span-full";
         return (
-            <article className={cls} >
+            <article  >
                 <h1 className={hCls} >Global Status</h1>
-                <Confirmed/>
-                <Death/>
-                <Recovered/>
-                <Active/>
+                <div className={cls}>
+                    <Confirmed data={totalConfirmed} preCls={preCls} color='blue' />
+                    <Death data={totalDeaths} color='red' />
+                    <Recovered data={totalRecovered} color='green' />
+                    <Active data={totalRecovered} color='yellow' />
+                </div>
             </article>
         )
     }

@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
-
+import GlobalStatus from './global/GlobalStatus'
 class Tracker extends Component {
+    
     render() {
+        const cls="container h-96  mx-auto grid grid-cols-2";
         return (
-            <div>
-                Tracker
-            </div>
+            <main className={cls}>
+               <GlobalStatus/>
+            </main>
         )
     }
 }

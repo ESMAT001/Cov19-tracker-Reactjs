@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Tracker from './components/Tracker';
 function App() {
+  const cls="relative w-full h-96 bg-black";
+  const overlayCls="absolute top-0 left-0 w-full h-full bg-blue-700 bg-opacity-20"
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={cls}>
+      <span className={overlayCls}>
+
+      </span>
+      <Tracker />
     </div>
   );
 }

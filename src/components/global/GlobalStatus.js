@@ -35,7 +35,7 @@ class GlobalStatus extends Component {
             const darkCls = `dark:bg-${color}-800 dark:bg-opacity-30 capitalize `;
 
             const lightCls = `text-${color}-600 tex-base sm:text-lg px-2 font-bold w-full text-center py-8 rounded hover:shadow-lg
-            hover:bg-${color}-100 transition duration-300 ease-in-out hov`
+            hover:bg-${color}-100 transition duration-300 ease-in-out`
 
             return lightCls + " " + darkCls
         }
@@ -45,28 +45,28 @@ class GlobalStatus extends Component {
         const preCls = " col-span-full";
         return (
             <article  >
-                <h1 className={hCls} >Global <i class="fal fa-globe-europe text-blue-500"></i> Status</h1>
+                <h1 className={hCls} >Global <i className="fal fa-globe-europe text-blue-500"></i> Status</h1>
                 <div className={cls}>
                     <Status data={totalConfirmed} cls={componentsCls} preCls={preCls} color='blue'>
-                        Confirmed <i class="far fa-check text-2xl" ></i>
+                        Confirmed <i className="far fa-check text-2xl" ></i>
                     </Status>
                     <Status data={totalDeaths} totalConfirmed={totalConfirmed} cls={componentsCls} color='red'>
-                        Death <i class="far fa-skull text-2xl"></i>
+                        Death <i className="far fa-skull text-2xl"></i>
                     </Status>
                     <Status data={totalRecovered} totalConfirmed={totalConfirmed} cls={componentsCls} color='green'>
-                        Recovered <i class="far fa-heartbeat text-2xl"></i>
+                        Recovered <i className="far fa-heartbeat text-2xl"></i>
                     </Status>
                     <Status data={totalActiveCases} totalConfirmed={totalConfirmed} cls={componentsCls} color='yellow'>
-                        Active <i class="far fa-lungs-virus text-2xl"></i>
+                        Active <i className="far fa-lungs-virus text-2xl"></i>
                     </Status>
                     <Status data={totalCasesPerMillionPop} cls={componentsCls} color='purple'>
-                        per milion <i class="fas fa-head-side-cough text-2xl"></i>
+                        per milion <i className="fas fa-head-side-cough text-2xl"></i>
                     </Status>
                     <Status data={totalNewCases} cls={componentsCls} color='pink'>
-                        new cases <i class="far fa-ambulance text-2xl"></i>
+                        new cases <i className="far fa-ambulance text-2xl"></i>
                     </Status>
                     <Status data={totalNewDeaths} cls={componentsCls} color='red'>
-                        new Death <i class="far fa-skull-crossbones text-2xl"></i>
+                        new Death <i className="far fa-skull-crossbones text-2xl"></i>
                     </Status>
                 </div>
                 <p className="text-xs text-center text-gray-700 opacity-80">Created at {created}</p>

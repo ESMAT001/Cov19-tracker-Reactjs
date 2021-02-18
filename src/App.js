@@ -14,13 +14,12 @@ function App() {
   }
 
 
-  const cls = " w-full  p-10 sm:px-14 md:p-20";
+  const cls = " w-full  px-8 py-12 sm:px-14 md:p-20";
   return (
-    <div className={isDark ? "dark" : ""}>
-      
+    <div className={isDark ? "dark font-Raleway" : "font-Raleway"}>
       <div className="dark:bg-darkMode bg-white ">
-        <button onClick={handleDarkMode} className="cursor-pointer focus:outline-none">
-          <img src={isDark ? lightLogo : darkLogo} alt="light mode and dark mode icon" />
+        <button onClick={handleDarkMode} className="cursor-pointer focus:outline-none float-right clear-both mt-4 mr-4 lg:my-5 lg:mx-6 ">
+          <img src={isDark ? lightLogo : darkLogo} className="w-7"  alt="light mode and dark mode icon" />
         </button> 
         <div className={cls}  >
           <Tracker handleDarkMode={handleDarkMode} />

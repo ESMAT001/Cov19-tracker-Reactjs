@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import Confirmed from './Confirmed'
-import Death from './Death';
-import Active from './Active';
-import Recovered from './Recovered';
+import Status from './Status'
+
 
 class GlobalStatus extends Component {
     constructor(props) {
@@ -26,22 +24,35 @@ class GlobalStatus extends Component {
     }
 
     render() {
-        console.log(this.state)
-        const { created, totalActiveCases, totalCasesPerMillionPop, totalConfirmed, totalDeaths, totalNewCases, totalNewDeaths, totalRecovered } = this.state.data
+
+        const { created, totalActiveCases, totalCasesPerMillionPop, totalConfirmed, totalDeaths, totalNewCases, totalNewDeaths, totalRecovered } = this.state.data;
+
         const cls = "grid grid-cols-3 text-white gap-4";
-        const hCls = "text-gray-100 text-2xl ";
+        const hCls = "dark:text-gray-100 text-gray-800 antialiased text-2xl text-center pb-4";
 
 
 
-        const preCls="col-span-full";
+        const componentsCls=(color)=>(`text-${color}-600 font-bold dark:bg-${color}-800 dark:bg-opacity-30 w-full text-center py-8 rounded hover:bg-opacity-40 hover:shadow-lg hover:bg-${color}-300  transition duration-300 ease-in-out`)
+
+
+
+        const preCls=" col-span-full";
         return (
             <article  >
                 <h1 className={hCls} >Global Status</h1>
                 <div className={cls}>
-                    <Confirmed data={totalConfirmed} preCls={preCls} color='blue' />
-                    <Death data={totalDeaths} color='red' />
-                    <Recovered data={totalRecovered} color='green' />
-                    <Active data={totalRecovered} color='yellow' />
+                    <Status data={totalConfirmed} cls={componentsCls} preCls={preCls} color='blue'>
+                        Confirmed
+                    </Status>
+                    <Status  data={totalDeaths} cls={componentsCls} color='red'>
+                        Death
+                    </Status>
+                    <Status data={totalRecovered} cls={componentsCls} color='green'>
+                        Recovered
+                    </Status>
+                    <Status data={totalActiveCases} cls={componentsCls} color='yellow'>
+                        Active
+                    </Status>
                 </div>
             </article>
         )

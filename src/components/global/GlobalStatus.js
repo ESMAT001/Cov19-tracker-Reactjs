@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Status from './Status'
+import GlobalStatusChart from './GlobalStatusChart'
 
 
 class GlobalStatus extends Component {
@@ -69,10 +70,11 @@ class GlobalStatus extends Component {
                         new Death <i className="far fa-skull-crossbones text-2xl"></i>
                     </Status>
                 </div>
+                <GlobalStatusChart/>  
                 <p className="text-xs text-center text-gray-700 opacity-80">Created at {created}</p>
             </article>
         )
     }
 }
 
-export default GlobalStatus
+export default GlobalStatus;

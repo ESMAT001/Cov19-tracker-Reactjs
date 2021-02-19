@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import CountrySearch from './CountrySearch';
 import CountryChart from './CountryChart'
-
 class CountryStatus extends Component {
     constructor(props) {
         super(props)
@@ -65,7 +64,7 @@ class CountryStatus extends Component {
 
     render() {
         const { inputText, placeholder } = this.state
-        const cls = "w-full  h-98"
+        const cls = "w-full "
         return (
             <div className={cls}>
                 <CountrySearch

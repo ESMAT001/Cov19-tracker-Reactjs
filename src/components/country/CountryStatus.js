@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import CountrySearch from './CountrySearch';
-
+import CountryChart from './CountryChart'
 
 class CountryStatus extends Component {
     constructor(props) {
@@ -75,6 +75,7 @@ class CountryStatus extends Component {
                     clearPlaceHolder={this.handleClearPlaceHolder}
                     placeholderAnimation={this.placeholderAnimation}
                 />
+                <CountryChart/>
             </div>
         )
     }

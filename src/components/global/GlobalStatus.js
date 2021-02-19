@@ -48,7 +48,7 @@ class GlobalStatus extends Component {
                 <h1 className={hCls} >Global <i className="fal fa-globe-europe text-blue-500"></i> Status</h1>
                 <div className={cls}>
                     <Status data={totalConfirmed} cls={componentsCls} preCls={preCls} color='blue'>
-                        Confirmed <i className="far fa-check text-2xl" ></i>
+                        Confirmed <i className="far  fa-check text-2xl" ></i>
                     </Status>
                     <Status data={totalDeaths} totalConfirmed={totalConfirmed} cls={componentsCls} color='red'>
                         Death <i className="far fa-skull text-2xl"></i>

@@ -25,7 +25,7 @@ class GlobalStatus extends Component {
 
     render() {
 
-        const { created, totalActiveCases, totalCasesPerMillionPop, totalConfirmed, totalDeaths, totalNewCases, totalNewDeaths, totalRecovered } = this.state.data;
+        const { created, totalCasesPerMillionPop, totalActiveCases, totalConfirmed, totalDeaths, totalRecovered, totalNewCases, totalNewDeaths } = this.state.data;
 
         const cls = "grid grid-cols-2 sm:grid-cols-3 text-white gap-4 mb-4";
         const hCls = "dark:text-gray-100 text-gray-700 antialiased text-2xl text-center pb-4";
@@ -45,7 +45,7 @@ class GlobalStatus extends Component {
 
         const preCls = " col-span-full";
         return (
-            <article  >
+            <article className="row-span-2" >
                 <h1 className={hCls} >Global <i className="fal fa-globe-europe text-blue-500"></i> Status</h1>
                 <div className={cls}>
                     <Status data={totalConfirmed} cls={componentsCls} preCls={preCls} color='blue'>
@@ -70,8 +70,13 @@ class GlobalStatus extends Component {
                         new Death <i className="far fa-skull-crossbones text-2xl"></i>
                     </Status>
                 </div>
-                <GlobalStatusChart/>  
-                <p className="text-xs text-center text-gray-700 opacity-80">Created at {created}</p>
+                <GlobalStatusChart
+                    totalActiveCases={totalActiveCases}
+                    totalConfirmed={totalConfirmed}
+                    totalDeaths={totalDeaths}
+                    totalRecovered={totalRecovered}
+                />
+                <p className="text-xs text-center text-gray-700 opacity-80 mt-4">Created at {created}</p>
             </article>
         )
     }

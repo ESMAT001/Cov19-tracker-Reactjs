@@ -1,10 +1,10 @@
 import React from 'react'
 
-function CountryChart() {
-    const cls="bg-gray-200"
+function CountryChart({country}) {
+    const cls="bg-gray-200 h-96"
     return (
         <div className={cls}>
-            
+            {country}
         </div>
     )
 }

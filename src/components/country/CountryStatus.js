@@ -74,7 +74,7 @@ class CountryStatus extends Component {
                     clearPlaceHolder={this.handleClearPlaceHolder}
                     placeholderAnimation={this.placeholderAnimation}
                 />
-                <CountryChart/>
+                <CountryChart country={this.props.country}/>
             </div>
         )
     }

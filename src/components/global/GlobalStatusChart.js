@@ -1,6 +1,6 @@
 import React,{useContext} from 'react';
 
-function GlobalStatusChart() {
+function GlobalStatusChart({totalActiveCases, totalConfirmed, totalDeaths, totalRecovered}) {
     // const globalData=useContext(globalDataContext);
     // console.log("hook context global",globalData)
 

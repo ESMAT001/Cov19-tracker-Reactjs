@@ -6,7 +6,6 @@ function CountriesTable({ handleCountryChange, data }) {
     const perPage = 10;
     const [currentPage, setCurrentPage] = useState(1)
 
-    console.log("current page",currentPage)
     const lastIndex = currentPage * perPage;
     const firstIndex = lastIndex - perPage;
     const slicedData = data.slice(firstIndex, lastIndex)

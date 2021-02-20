@@ -9,8 +9,8 @@ function Pagination({ page, setCurrentPage, data, perPage }) {
     let iStart = page - 1
     let iEnd = page + 2
     if (iEnd >= totalPages) {
-        iEnd = 23;
-        iStart = 20;
+        iEnd = totalPages-1;
+        iStart = totalPages-4;
     }
     if (iStart <= 1) {
         iStart = 2

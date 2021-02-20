@@ -1,16 +1,19 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import CountrySearch from './CountrySearch';
 import CountryChart from './CountryChart'
-class CountryStatus extends Component {
+import { CountryCodeContext } from '../Tracker'
+class CountryStatus extends PureComponent {
     constructor(props) {
         super(props)
 
         this.state = {
+            country: 'af',
             inputText: "",
             placeholder: "",
             i: 0
         }
     }
+
     placeholderAnimation = () => {
         let i = this.state.i;
         try {
@@ -41,6 +44,9 @@ class CountryStatus extends Component {
         }
     }
     componentDidMount() {
+        this.setState({
+            country: this.props.country
+        })
         this.placeholderAnimation();
     }
 
@@ -64,7 +70,7 @@ class CountryStatus extends Component {
 
     render() {
         const { inputText, placeholder } = this.state
-        const cls = "w-full "
+        const cls = "w-full row-start-2 lg:row-start-1 lg:col-start-2 lg:row-span-2"
         return (
             <div className={cls}>
                 <CountrySearch
@@ -74,7 +80,17 @@ class CountryStatus extends Component {
                     clearPlaceHolder={this.handleClearPlaceHolder}
                     placeholderAnimation={this.placeholderAnimation}
                 />
-                <CountryChart country={this.props.country}/>
+                <CountryCodeContext.Consumer>
+                    {
+                        ([data, handler, country]) => {
+                            if (data) {
+                                return <CountryChart country={country} data={data} />
+                            }
+
+                        }
+                    }
+                </CountryCodeContext.Consumer>
+
             </div>
         )
     }

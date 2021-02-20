@@ -19,7 +19,7 @@ class GlobalStatus extends Component {
         data = await data.json()
         console.log(data)
         this.setState({
-            data
+            data:data   
         })
     }
 
@@ -35,8 +35,7 @@ class GlobalStatus extends Component {
         const componentsCls = (color) => {
             const darkCls = `dark:bg-${color}-800 dark:bg-opacity-30 capitalize `;
 
-            const lightCls = `text-${color}-600 tex-base sm:text-lg px-2 font-bold w-full text-center py-8 rounded hover:shadow-lg
-            hover:bg-${color}-100 transition duration-300 ease-in-out`
+            const lightCls = `text-${color}-600 tex-base sm:text-lg px-2 font-bold w-full text-center py-8 rounded hover:shadow-lg hover:bg-${color}-100 transition duration-300 ease-in-out`
 
             return lightCls + " " + darkCls
         }
@@ -45,7 +44,7 @@ class GlobalStatus extends Component {
 
         const preCls = " col-span-full";
         return (
-            <article className="row-span-2" >
+            <article className="" >
                 <h1 className={hCls} >Global <i className="fal fa-globe-europe text-blue-500"></i> Status</h1>
                 <div className={cls}>
                     <Status data={totalConfirmed} cls={componentsCls} preCls={preCls} color='blue'>
@@ -70,12 +69,12 @@ class GlobalStatus extends Component {
                         new Death <i className="far fa-skull-crossbones text-2xl"></i>
                     </Status>
                 </div>
-                <GlobalStatusChart
+                {totalActiveCases && <GlobalStatusChart
                     totalActiveCases={totalActiveCases}
                     totalConfirmed={totalConfirmed}
                     totalDeaths={totalDeaths}
                     totalRecovered={totalRecovered}
-                />
+                />}
                 <p className="text-xs text-center text-gray-700 opacity-80 mt-4">Created at {created}</p>
             </article>
         )

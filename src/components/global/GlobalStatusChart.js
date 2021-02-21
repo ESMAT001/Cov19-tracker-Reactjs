@@ -11,6 +11,9 @@ class GlobalStatusChart extends Component {
                 chart: {
                     id: "basic-bar"
                 },
+                grid: {
+                    show: false
+                },
                 xaxis: {
                     categories: ['Confirmed', 'Recovered', 'Active', 'Death']
                 }

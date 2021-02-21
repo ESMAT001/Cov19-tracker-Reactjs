@@ -39,7 +39,11 @@ function CountriesTable() {
                                 countryCode = countryCode ? countryCode.toLowerCase() : countryCode;
                                 lastUpdated = lastUpdated.substring(0, 10);
                                 return (
-                                    <tr className="divide-x divide-blue-700 divide-opacity-75 transition duration-300 ease-in-out cursor-pointer hover:bg-blue-700 hover:bg-opacity-20" key={countryCode + countryName} onClick={() => handleCountryChange(countryCode)}>
+
+                                    <tr className="divide-x divide-blue-700 divide-opacity-75 transition duration-300 ease-in-out cursor-pointer hover:bg-blue-700 hover:bg-opacity-20" key={countryCode + countryName} onClick={() => {
+                                        handleCountryChange(countryCode);
+                                    }}>
+
                                         <td className="flex items-center py-4 pl-4 pr-2" >
                                             {
                                                 countryCode && <span className="w-14">
@@ -81,6 +85,7 @@ function CountriesTable() {
                                             {lastUpdated}
                                         </td>
                                     </tr>
+
                                 )
                             })
                         }

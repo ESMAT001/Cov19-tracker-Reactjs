@@ -1,16 +1,16 @@
 
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 import Chart from "react-apexcharts";
 import CountrySubInfoBox from './CountrySubInfoBox';
-class CountryChart extends PureComponent {
+class CountryChart extends Component {
+
     constructor(props) {
         super(props);
-
         this.state = {
-            countryCode: this.props.country.toUpperCase(),
+            update: false,
+            countryCode: false,
             show: false,
             chart1: {
-
                 options: {
                     colors: ['#03A9F4'],
                     stroke: {
@@ -114,18 +114,91 @@ class CountryChart extends PureComponent {
             }
         };
     }
-    componentDidMount() {
-        this.getAllData(this.state.countryCode);
+    // componentDidMount() {
+    //     if(this.state.countryCode){
+    //         this.getAllData(this.state.countryCode);
+    //     }
 
+
+    // }
+    static getDerivedStateFromProps = (props, state) => {
+        if (props.countryCode !== state.countryCode) {
+
+            console.log(props.countryCode, 'props country code')
+            console.log(state, 'update')
+            return {
+                update: true,
+                countryCode: props.countryCode
+            }
+        }
+        return {
+
+        }
     }
-    componentDidUpdate() {
-        console.log(this.state.countryCode)
+    shouldComponentUpdate(p, nextState) {
+        if (nextState.countryCode !== this.state.countryCode || nextState.update) {
+            this.setState({
+                update: false
+            })
+            this.getAllData(nextState.countryCode)
+            return true
+        } else if (this.state.show) {
+            this.setState({
+                show: false
+            })
+            return true
+        }
+        return false
     }
+
+
     getAllData = async (countryCode) => {
-
+        this.setState({
+            chart1: {
+                options: {
+                    xaxis: {
+                        categories: [0]
+                    }
+                },
+                series: [
+                    {
+                        name: "Confirmed",
+                        data: [0]
+                    }
+                ]
+            },
+            chart2: {
+                options: {
+                    xaxis: {
+                        categories: [0]
+                    }
+                },
+                series: [
+                    {
+                        name: "Death",
+                        data: [0]
+                    }
+                ]
+            },
+            chart3: {
+                options: {
+                    xaxis: {
+                        categories: [0]
+                    }
+                },
+                series: [
+                    {
+                        name: "Recovered",
+                        data: [0]
+                    }
+                ]
+            }
+        })
+        countryCode = countryCode.toUpperCase();
         let currentDate = new Date().toISOString().slice(0, 10)
         let data = await fetch(`https://api.coronatracker.com/v5/analytics/trend/country?countryCode=${countryCode}&startDate=2020-01-01&endDate=${currentDate}`);
         data = await data.json();
+        console.log(data)
         let total_confirmed = [];
         let total_deaths = [];
         let total_recovered = [];
@@ -150,6 +223,7 @@ class CountryChart extends PureComponent {
         }
         last_updated.push(data[data.length - 1].last_updated.slice(0, 10));
         this.setState({
+            show: true,
             chart1: {
                 options: {
                     xaxis: {
@@ -192,6 +266,7 @@ class CountryChart extends PureComponent {
         })
     }
     render() {
+        console.log(this.state.countryCode, "now")
         return (
             <div className="h-5/6 flex flex-col justify-between">
 

@@ -7,7 +7,6 @@ class CountryStatus extends PureComponent {
         super(props)
 
         this.state = {
-            country: 'af',
             inputText: "",
             placeholder: "",
             i: 0
@@ -44,9 +43,7 @@ class CountryStatus extends PureComponent {
         }
     }
     componentDidMount() {
-        this.setState({
-            country: this.props.country
-        })
+      
         this.placeholderAnimation();
     }
 
@@ -82,9 +79,10 @@ class CountryStatus extends PureComponent {
                 />
                 <CountryCodeContext.Consumer>
                     {
-                        ([data, handler, country]) => {
-                            if (data) {
-                                return <CountryChart country={country} data={data} />
+                        ([data, handler, countryCode]) => {
+                            if (data && countryCode) {
+                                // console.log(countryCode,"context")
+                                return <CountryChart countryCode={countryCode} data={data} />
                             }
 
                         }

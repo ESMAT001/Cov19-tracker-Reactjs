@@ -44,7 +44,7 @@ class GlobalStatus extends Component {
 
         const preCls = " col-span-full";
         return (
-            <article className="" >
+            <article className="lg:row-span-2 flex flex-col justify-between" >
                 <h1 className={hCls} >Global <i className="fal fa-globe-europe text-blue-500"></i> Status</h1>
                 <div className={cls}>
                     <Status data={totalConfirmed} cls={componentsCls} preCls={preCls} color='blue'>

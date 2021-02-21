@@ -9,10 +9,19 @@ class CountryStatus extends PureComponent {
         this.state = {
             inputText: "",
             placeholder: "",
-            i: 0
+            i: 0,
+            show: true
         }
     }
 
+    static getDerivedStateFromProps = (props, state) => {
+
+        return {
+            data: props.data,
+            countryCode: props.country
+        }
+
+    }
     placeholderAnimation = () => {
         let i = this.state.i;
         try {
@@ -43,7 +52,7 @@ class CountryStatus extends PureComponent {
         }
     }
     componentDidMount() {
-      
+
         this.placeholderAnimation();
     }
 
@@ -64,10 +73,16 @@ class CountryStatus extends PureComponent {
             placeholder
         })
     }
-
+    handleGetLocation=()=>{
+        console.log('updating country code')
+        this.setState({
+            countryCode:'AF'
+        })
+    }
     render() {
         const { inputText, placeholder } = this.state
         const cls = "w-full row-start-2 lg:row-start-1 lg:col-start-2 lg:row-span-2"
+        console.log(this.state)
         return (
             <div className={cls}>
                 <CountrySearch
@@ -77,19 +92,32 @@ class CountryStatus extends PureComponent {
                     clearPlaceHolder={this.handleClearPlaceHolder}
                     placeholderAnimation={this.placeholderAnimation}
                 />
-                <CountryCodeContext.Consumer>
+                {
+                    this.state.data && this.state.countryCode && <CountryChart countryCode={this.state.countryCode} data={this.state.data} />
+                }
+                {
+                    this.state.show && !this.state.countryCode && < div className="h-5/6 flex flex-col justify-between text-white" id="chart">
+                        <button onClick={this.handleGetLocation}> Loading....</button>
+                    </div>
+                }
+                {/* <CountryCodeContext.Consumer>
                     {
                         ([data, handler, countryCode]) => {
-                            if (data && countryCode) {
+                            
+                            if (data && countryCode && false) {
                                 // console.log(countryCode,"context")
                                 return <CountryChart countryCode={countryCode} data={data} />
+                            } else {
+                                return (
+                                   
+                                )
                             }
 
                         }
                     }
-                </CountryCodeContext.Consumer>
+                </CountryCodeContext.Consumer> */}
 
-            </div>
+            </div >
         )
     }
 }

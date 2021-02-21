@@ -10,7 +10,7 @@ class Tracker extends Component {
 
         this.state = {
             data: null,
-            country: null
+            country: false
         }
     }
 
@@ -20,7 +20,7 @@ class Tracker extends Component {
     getAllCountriesData = async () => {
         let data = await fetch('https://api.coronatracker.com/v3/stats/worldometer/country')
         data = await data.json()
-        this.setState({ data: data, country: "AF" })
+        this.setState({ data: data})
     }
     handleCountryChange = (countryCode) => {
         this.setState({ country: countryCode })
@@ -38,7 +38,7 @@ class Tracker extends Component {
                     <CountryCodeContext.Provider value={[this.state.data, this.handleCountryChange, this.state.country]}>
                         <GlobalStatus />
                         <CountryStatus
-                        // country={this.state.country} data={this.state.data}
+                        country={this.state.country} data={this.state.data}
                         />
                         {
                             this.state.data && <CountriesTable

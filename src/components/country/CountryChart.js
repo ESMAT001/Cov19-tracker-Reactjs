@@ -10,6 +10,7 @@ class CountryChart extends Component {
             update: false,
             countryCode: false,
             show: false,
+            loading: false,
             chart1: {
                 options: {
                     colors: ['#03A9F4'],
@@ -154,45 +155,7 @@ class CountryChart extends Component {
 
     getAllData = async (countryCode) => {
         this.setState({
-            chart1: {
-                options: {
-                    xaxis: {
-                        categories: [0]
-                    }
-                },
-                series: [
-                    {
-                        name: "Confirmed",
-                        data: [0]
-                    }
-                ]
-            },
-            chart2: {
-                options: {
-                    xaxis: {
-                        categories: [0]
-                    }
-                },
-                series: [
-                    {
-                        name: "Death",
-                        data: [0]
-                    }
-                ]
-            },
-            chart3: {
-                options: {
-                    xaxis: {
-                        categories: [0]
-                    }
-                },
-                series: [
-                    {
-                        name: "Recovered",
-                        data: [0]
-                    }
-                ]
-            }
+            // loading: false
         })
         countryCode = countryCode.toUpperCase();
         let currentDate = new Date().toISOString().slice(0, 10)
@@ -263,59 +226,69 @@ class CountryChart extends Component {
                     }
                 ]
             }
+            , loading: true,
         })
     }
     render() {
-        console.log(this.state.countryCode, "now")
-        return (
-            <div className="h-5/6 flex flex-col justify-between">
+        console.log(this.state)
+        if (true) {
+            return (
+                <div className="h-5/6 flex flex-col justify-between">
 
-                <CountrySubInfoBox countryCode={this.state.countryCode} data={this.props.data} />
+                    <CountrySubInfoBox countryCode={this.state.countryCode} data={this.props.data} />
 
-                <h3 className="text-center pt-4 pb-2 text-blue-400 font-bold" >Confirmed</h3>
-                <div className="app">
-                    <div className="row">
-                        <div className="mixed-chart h-64">
-                            <Chart
-                                options={this.state.chart1.options}
-                                series={this.state.chart1.series}
-                                type="line"
-                                width="100%"
-                                height="100%"
-                            />
+                    <h3 className="text-center pt-4 pb-2 text-blue-400 font-bold" >Confirmed</h3>
+                    <div className="app">
+                        <div className="row">
+                            <div className="mixed-chart h-64">
+                                <Chart
+                                    options={this.state.chart1.options}
+                                    series={this.state.chart1.series}
+                                    type="line"
+                                    width="100%"
+                                    height="100%"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <h3 className="text-center pt-4 pb-2 text-red-400 font-bold" >Death</h3>
+                    <div className="app">
+                        <div className="row">
+                            <div className="mixed-chart h-64">
+                                <Chart
+                                    options={this.state.chart2.options}
+                                    series={this.state.chart2.series}
+                                    type="line"
+                                    width="100%"
+                                    height="100%"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <h3 className="text-center pt-4 pb-2 text-green-400 font-bold" >Recovered</h3>
+                    <div className="app">
+                        <div className="row">
+                            <div className="mixed-chart h-64">
+                                <Chart
+                                    options={this.state.chart3.options}
+                                    series={this.state.chart3.series}
+                                    type="line"
+                                    width="100%"
+                                    height="100%"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <h3 className="text-center pt-4 pb-2 text-red-400 font-bold" >Death</h3>
-                <div className="app">
-                    <div className="row">
-                        <div className="mixed-chart h-64">
-                            <Chart
-                                options={this.state.chart2.options}
-                                series={this.state.chart2.series}
-                                type="line"
-                                width="100%"
-                                height="100%"
-                            />
-                        </div>
-                    </div>
+            );
+        } else {
+            return (
+                <div className="h-5/6 flex flex-col justify-between text-white" id="chart">
+                    Loading....
                 </div>
-                <h3 className="text-center pt-4 pb-2 text-green-400 font-bold" >Recovered</h3>
-                <div className="app">
-                    <div className="row">
-                        <div className="mixed-chart h-64">
-                            <Chart
-                                options={this.state.chart3.options}
-                                series={this.state.chart3.series}
-                                type="line"
-                                width="100%"
-                                height="100%"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
+            )
+        }
+
     }
 }
 

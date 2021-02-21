@@ -28,16 +28,29 @@ function CountrySubInfoBox({ data, countryCode }) {
         <div className="w-full mt-4" id="chart">
             <h2 className="text-gray-100 py-4 text-center text-lg" >{countryData.countryName} Status </h2>
             <div className="w-ful grid grid-cols-3 ">
-            <Status data={countryData.totalActiveCases} totalConfirmed={countryData.totalConfirmed} cls={componentsCls} color='yellow'>
-                Active <i className="far fa-lungs-virus text-2xl"></i>
-            </Status>
-            <Status data={countryData.totalDeaths} totalConfirmed={countryData.totalConfirmed} cls={componentsCls} color='red'>
-                Death <i className="far fa-skull text-2xl"></i>
-            </Status>
-            <Status data={countryData.totalRecovered} totalConfirmed={countryData.totalConfirmed} cls={componentsCls} color='green'>
-                Recovered <i className="far fa-heartbeat text-2xl"></i>
-            </Status>
-        </div>
+                <Status
+                    data={countryData.totalActiveCases}
+                    totalConfirmed={countryData.totalConfirmed}
+                    cls={componentsCls}
+                    color='yellow'>
+                    Active <i className="far fa-lungs-virus text-2xl"></i>
+                </Status>
+                <Status
+                    data={countryData.totalDeaths}
+                    totalConfirmed={countryData.totalConfirmed}
+                    cls={componentsCls}
+                    color='red'>
+                    Death <i className="far fa-skull text-2xl"></i>
+                </Status>
+                <Status
+                    data={countryData.totalRecovered}
+                    totalConfirmed={countryData.totalConfirmed}
+                    cls={componentsCls}
+                    
+                    color='green'>
+                    Recovered <i className="far fa-heartbeat text-2xl"></i>
+                </Status>
+            </div>
         </div>
     )
 }

@@ -123,10 +123,8 @@ class CountryChart extends Component {
 
     // }
     static getDerivedStateFromProps = (props, state) => {
+        // console.log(props,'props');
         if (props.countryCode !== state.countryCode) {
-
-            console.log(props.countryCode, 'props country code')
-            console.log(state, 'update')
             return {
                 update: true,
                 countryCode: props.countryCode
@@ -154,14 +152,12 @@ class CountryChart extends Component {
 
 
     getAllData = async (countryCode) => {
-        this.setState({
-            // loading: false
-        })
+       
         countryCode = countryCode.toUpperCase();
         let currentDate = new Date().toISOString().slice(0, 10)
         let data = await fetch(`https://api.coronatracker.com/v5/analytics/trend/country?countryCode=${countryCode}&startDate=2020-01-01&endDate=${currentDate}`);
         data = await data.json();
-        console.log(data)
+        // console.log(data)
         let total_confirmed = [];
         let total_deaths = [];
         let total_recovered = [];
@@ -230,7 +226,7 @@ class CountryChart extends Component {
         })
     }
     render() {
-        console.log(this.state)
+        // console.log(this.state)
         if (true) {
             return (
                 <div className="h-5/6 flex flex-col justify-between">

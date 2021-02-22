@@ -10,23 +10,23 @@ class CountryStatus extends PureComponent {
             inputText: "",
             placeholder: "",
             i: 0,
-            show: true
+
+            data: null,
+            countryCode: false
         }
     }
 
     static getDerivedStateFromProps = (props, state) => {
-
-        if (state.show || (typeof (props.country) === "string")) {
+      
+        if (typeof (props.country) === "string") {
             return {
                 data: props.data,
                 countryCode: props.country
             }
-        } else {
-            return {}
         }
-
-
-
+        return {
+            data: props.data,
+        }
     }
     placeholderAnimation = () => {
         let i = this.state.i;
@@ -60,7 +60,7 @@ class CountryStatus extends PureComponent {
     componentDidMount() {
 
         this.placeholderAnimation();
-        this.handleGetLocation();
+
     }
 
 
@@ -68,7 +68,13 @@ class CountryStatus extends PureComponent {
         clearInterval(this.placeholderInterval);
     }
 
-    handleTextInputChange = (inputText) => {
+    handleTextInputChange = (inputText,clear=false) => {
+        if(clear){
+            this.setState({
+                inputText:''
+            })
+            return 
+        }
         this.setState({
             inputText
         })
@@ -80,40 +86,11 @@ class CountryStatus extends PureComponent {
             placeholder
         })
     }
-    handleGetLocation = () => {
-
-
-        if (window.navigator.geolocation && this.state.data) {
-            window.navigator.geolocation.getCurrentPosition(e => {
-
-                let { data } = this.state;
-                const lat = e.coords.latitude.toFixed(2);
-                const lng = e.coords.longitude.toFixed(2);
-
-                for (let i = 0; i < data.length; i++) {
-                    if (data[i].lat === null || data[i].lng === null) {
-                        continue;
-                    }
-                    let dataLat = data[i].lat.toFixed(2);
-                    let dataLng = data[i].lng.toFixed(2);
-                    if (((lat + 4) >= dataLat && (lat - 4) <= dataLat) && (lng + 4) >= dataLng && (lng - 4) <= dataLng) {
-
-                        this.setState({
-                            show: false,
-                            countryCode: data[i].countryCode
-                        })
-                        break;
-                    }
-
-                }
-            })
-        }
-
-    }
+    
     render() {
         const { inputText, placeholder } = this.state
         const cls = "w-full row-start-2 lg:row-start-1 lg:col-start-2 lg:row-span-2"
-
+      
         return (
             <div className={cls}>
                 <CountrySearch
@@ -122,19 +99,21 @@ class CountryStatus extends PureComponent {
                     handleTextInputChange={this.handleTextInputChange}
                     clearPlaceHolder={this.handleClearPlaceHolder}
                     placeholderAnimation={this.placeholderAnimation}
+                    handleGetLocation={this.props.handleGetLocation}
+                    data={this.state.data}
                 />
                 {
                     this.state.data && this.state.countryCode && <CountryChart countryCode={this.state.countryCode} data={this.state.data} />
                 }
                 {
-                    this.state.show && !this.state.data && !this.state.countryCode && < div className="h-5/6 flex flex-col justify-between text-white" id="chart">
+                    !this.state.data && !this.state.countryCode && < div className="h-5/6 flex flex-col justify-between text-white" id="chart">
                         <button> Loading....</button>
                     </div>
                 }
                 {
-                     this.state.data && !this.state.countryCode && < div className="h-5/6 flex flex-col justify-between text-white" id="chart">
-                     <button onClick={this.handleGetLocation}>  Click here to show your country status or search your desired country in the text box</button>
-                 </div>
+                    this.state.data && !this.state.countryCode && < div className="h-5/6 flex flex-col justify-between text-white" id="chart">
+                        <button onClick={this.props.handleGetLocation}>  Click here to show your country status or search your desired country in the text box</button>
+                    </div>
                 }
                 {/* <CountryCodeContext.Consumer>
                     {

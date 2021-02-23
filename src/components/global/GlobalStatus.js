@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import Status from './Status'
-import GlobalStatusChart from './GlobalStatusChart'
-
+import React, { Component } from 'react';
+import Status from './Status';
+import GlobalStatusChart from './GlobalStatusChart';
+import loadingSvg from '../../svg/loading.svg';
 
 class GlobalStatus extends Component {
     constructor(props) {
@@ -70,7 +70,7 @@ class GlobalStatus extends Component {
                     </Status>
                 </div>
                 {totalActiveCases && <div className="h-full flex flex-col justify-center">
-                <h1 className={hCls} >Global <i className="fal fa-globe-europe text-blue-500"></i> Status chart </h1>
+                    <h1 className={hCls} >Global <i className="fal fa-globe-europe text-blue-500"></i> Status chart </h1>
                     <GlobalStatusChart
                         totalActiveCases={totalActiveCases}
                         totalConfirmed={totalConfirmed}
@@ -80,9 +80,9 @@ class GlobalStatus extends Component {
                     <p className="text-xs text-center text-gray-700 opacity-80 mt-4">Created at {created}</p>
                 </div>
                 }
-                { !totalActiveCases && <p>
-                    LOADING...
-                    </p>
+                { !totalActiveCases && < div className="h-full lg:h-2/4 py-20 flex flex-col justify-center text-gray-500 font-semibold text-center" id="chart">
+                    <p className="text-xl flex justify-center items-center"> Loading Data<img src={loadingSvg} className="w-1/12" alt='loading icon' /></p>
+                </div>
                 }
             </article>
         )

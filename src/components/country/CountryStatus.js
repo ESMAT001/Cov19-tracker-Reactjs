@@ -1,7 +1,8 @@
 import React, { PureComponent } from 'react'
 import CountrySearch from './CountrySearch';
-import CountryChart from './CountryChart'
-import { CountryCodeContext } from '../Tracker'
+import CountryChart from './CountryChart';
+import loadingSvg from '../../svg/loading.svg'
+// import { CountryCodeContext } from '../Tracker'
 class CountryStatus extends PureComponent {
     constructor(props) {
         super(props)
@@ -17,7 +18,7 @@ class CountryStatus extends PureComponent {
     }
 
     static getDerivedStateFromProps = (props, state) => {
-      
+
         if (typeof (props.country) === "string") {
             return {
                 data: props.data,
@@ -68,12 +69,12 @@ class CountryStatus extends PureComponent {
         clearInterval(this.placeholderInterval);
     }
 
-    handleTextInputChange = (inputText,clear=false) => {
-        if(clear){
+    handleTextInputChange = (inputText, clear = false) => {
+        if (clear) {
             this.setState({
-                inputText:''
+                inputText: ''
             })
-            return 
+            return
         }
         this.setState({
             inputText
@@ -86,11 +87,11 @@ class CountryStatus extends PureComponent {
             placeholder
         })
     }
-    
+
     render() {
         const { inputText, placeholder } = this.state
         const cls = "w-full row-start-2 lg:row-start-1 lg:col-start-2 lg:row-span-2"
-      
+
         return (
             <div className={cls}>
                 <CountrySearch
@@ -106,8 +107,8 @@ class CountryStatus extends PureComponent {
                     this.state.data && this.state.countryCode && <CountryChart countryCode={this.state.countryCode} data={this.state.data} />
                 }
                 {
-                    !this.state.data && !this.state.countryCode && < div className="h-5/6 flex flex-col justify-between text-white" id="chart">
-                        <button> Loading....</button>
+                    !this.state.data && !this.state.countryCode && < div className="h-full lg:h-2/4 py-20 flex flex-col justify-center text-gray-500 font-semibold text-center" id="chart">
+                        <p className="text-xl flex justify-center items-center"> Loading Data<img src={loadingSvg} className="w-1/12" alt='loading icon' /></p>
                     </div>
                 }
                 {

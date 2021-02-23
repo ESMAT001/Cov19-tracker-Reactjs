@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import GlobalStatus from './global/GlobalStatus';
 import CountryStatus from './country/CountryStatus';
 import CountriesTable from './CountriesTable';
+import Footer from './Footer';
+
 
 export const CountryCodeContext = React.createContext();
 class Tracker extends Component {
@@ -89,6 +91,7 @@ class Tracker extends Component {
                         }
                     </CountryCodeContext.Provider>
 
+                    <Footer />
 
 
                 </div>

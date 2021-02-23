@@ -18,7 +18,7 @@ function App() {
   }
 
 
-  const cls = " w-full clear-both px-8 py-12 sm:px-14 md:p-20 ";
+  const cls = " w-full clear-both px-8 pt-12 pb-4 sm:px-14 md:px-20 md:pt-20 ";
 
   document.getElementsByTagName("html")[0].className = !isDark ? "" : 'bg-darkMode';
 

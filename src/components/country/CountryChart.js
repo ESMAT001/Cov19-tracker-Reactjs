@@ -167,11 +167,24 @@ class CountryChart extends Component {
         total_confirmed.push(data[1].total_confirmed - data[0].total_confirmed)
         total_deaths.push(data[1].total_deaths - data[0].total_deaths)
         total_recovered.push(data[1].total_recovered - data[0].total_recovered)
+
+
         for (let i = x; i < data.length; i += x) {
-            total_confirmed.push(data[i].total_confirmed - data[i - x].total_confirmed)
-            total_deaths.push(data[i].total_deaths - data[i - x].total_deaths)
-            total_recovered.push(data[i].total_recovered - data[i - x].total_recovered)
+
+            let confirmed = data[i].total_confirmed - data[i - x].total_confirmed;
+            let death = data[i].total_deaths - data[i - x].total_deaths;
+            let recovered = data[i].total_recovered - data[i - x].total_recovered;
+
+            confirmed = confirmed >= 0 ? confirmed : 0;
+            death = death >= 0 ? death : 0;
+            recovered = recovered >= 0 ? recovered : 0;
+
+            total_confirmed.push(confirmed)
+            total_deaths.push(death)
+            total_recovered.push(recovered)
         }
+
+
         total_confirmed.push(data[data.length - 1].total_confirmed - data[data.length - 2].total_confirmed)
         total_deaths.push(data[data.length - 1].total_deaths - data[data.length - 2].total_deaths)
         total_recovered.push(data[data.length - 1].total_recovered - data[data.length - 2].total_recovered)

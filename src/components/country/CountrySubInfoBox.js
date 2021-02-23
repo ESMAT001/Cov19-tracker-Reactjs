@@ -26,8 +26,14 @@ function CountrySubInfoBox({ data, countryCode }) {
 
     return (
         <div className="w-full mt-4" id="chart">
-            <h2 className="text-gray-100 py-4 text-center text-lg" >{countryData.countryName} Status </h2>
-            <div className="w-ful grid grid-cols-3 ">
+            <h2 className="text-gray-600 dark:text-gray-100 py-4 text-center text-lg" >{countryData.countryName} Status </h2>
+            <div className="w-ful grid grid-cols-3 gap-2">
+                <Status
+                    data={countryData.totalConfirmed}
+                    cls={componentsCls} preCls={'col-span-3'}
+                    color='blue'>
+                    Confirmed <i className="far  fa-check text-2xl" ></i>
+                </Status>
                 <Status
                     data={countryData.totalActiveCases}
                     totalConfirmed={countryData.totalConfirmed}
@@ -46,7 +52,7 @@ function CountrySubInfoBox({ data, countryCode }) {
                     data={countryData.totalRecovered}
                     totalConfirmed={countryData.totalConfirmed}
                     cls={componentsCls}
-                    
+
                     color='green'>
                     Recovered <i className="far fa-heartbeat text-2xl"></i>
                 </Status>

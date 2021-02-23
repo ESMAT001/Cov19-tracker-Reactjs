@@ -152,7 +152,7 @@ class CountryChart extends Component {
 
 
     getAllData = async (countryCode) => {
-       
+
         countryCode = countryCode.toUpperCase();
         let currentDate = new Date().toISOString().slice(0, 10)
         let data = await fetch(`https://api.coronatracker.com/v5/analytics/trend/country?countryCode=${countryCode}&startDate=2020-01-01&endDate=${currentDate}`);
@@ -226,64 +226,56 @@ class CountryChart extends Component {
         })
     }
     render() {
-        // console.log(this.state)
-        if (true) {
-            return (
-                <div className="h-5/6 flex flex-col justify-between">
 
-                    <CountrySubInfoBox countryCode={this.state.countryCode} data={this.props.data} />
+        return (
+            <div className="h-5/6 flex flex-col justify-between">
 
-                    <h3 className="text-center pt-4 pb-2 text-blue-400 font-bold" >Confirmed</h3>
-                    <div className="app">
-                        <div className="row">
-                            <div className="mixed-chart h-64">
-                                <Chart
-                                    options={this.state.chart1.options}
-                                    series={this.state.chart1.series}
-                                    type="line"
-                                    width="100%"
-                                    height="100%"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <h3 className="text-center pt-4 pb-2 text-red-400 font-bold" >Death</h3>
-                    <div className="app">
-                        <div className="row">
-                            <div className="mixed-chart h-64">
-                                <Chart
-                                    options={this.state.chart2.options}
-                                    series={this.state.chart2.series}
-                                    type="line"
-                                    width="100%"
-                                    height="100%"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <h3 className="text-center pt-4 pb-2 text-green-400 font-bold" >Recovered</h3>
-                    <div className="app">
-                        <div className="row">
-                            <div className="mixed-chart h-64">
-                                <Chart
-                                    options={this.state.chart3.options}
-                                    series={this.state.chart3.series}
-                                    type="line"
-                                    width="100%"
-                                    height="100%"
-                                />
-                            </div>
+                <CountrySubInfoBox countryCode={this.state.countryCode} data={this.props.data} />
+
+                <h3 className="text-center pt-4 pb-2 text-blue-400 font-bold" >Confirmed</h3>
+                <div className="app">
+                    <div className="row">
+                        <div className="mixed-chart h-64">
+                            <Chart
+                                options={this.state.chart1.options}
+                                series={this.state.chart1.series}
+                                type="line"
+                                width="100%"
+                                height="100%"
+                            />
                         </div>
                     </div>
                 </div>
-            );
-        } else {
-            return (
-                <div className="h-5/6 flex flex-col justify-between text-white" id="chart">
-                    Loading....
+                <h3 className="text-center pt-4 pb-2 text-red-400 font-bold" >Death</h3>
+                <div className="app">
+                    <div className="row">
+                        <div className="mixed-chart h-64">
+                            <Chart
+                                options={this.state.chart2.options}
+                                series={this.state.chart2.series}
+                                type="line"
+                                width="100%"
+                                height="100%"
+                            />
+                        </div>
+                    </div>
                 </div>
-            )
-        }
+                <h3 className="text-center pt-4 pb-2 text-green-400 font-bold" >Recovered</h3>
+                <div className="app">
+                    <div className="row">
+                        <div className="mixed-chart h-64">
+                            <Chart
+                                options={this.state.chart3.options}
+                                series={this.state.chart3.series}
+                                type="line"
+                                width="100%"
+                                height="100%"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
 
     }
 }

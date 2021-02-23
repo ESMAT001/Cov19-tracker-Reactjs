@@ -19,7 +19,7 @@ class GlobalStatus extends Component {
         data = await data.json()
         console.log(data)
         this.setState({
-            data:data   
+            data: data
         })
     }
 
@@ -44,7 +44,7 @@ class GlobalStatus extends Component {
 
         const preCls = " col-span-full";
         return (
-            <article className="lg:row-span-2 flex flex-col justify-between" >
+            <article className="lg:row-span-2 flex flex-col justify-start" >
                 <h1 className={hCls} >Global <i className="fal fa-globe-europe text-blue-500"></i> Status</h1>
                 <div className={cls}>
                     <Status data={totalConfirmed} cls={componentsCls} preCls={preCls} color='blue'>
@@ -69,13 +69,21 @@ class GlobalStatus extends Component {
                         new Death <i className="far fa-skull-crossbones text-2xl"></i>
                     </Status>
                 </div>
-                {totalActiveCases && <GlobalStatusChart
-                    totalActiveCases={totalActiveCases}
-                    totalConfirmed={totalConfirmed}
-                    totalDeaths={totalDeaths}
-                    totalRecovered={totalRecovered}
-                />}
-                <p className="text-xs text-center text-gray-700 opacity-80 mt-4">Created at {created}</p>
+                {totalActiveCases && <div className="h-full flex flex-col justify-center">
+                <h1 className={hCls} >Global <i className="fal fa-globe-europe text-blue-500"></i> Status chart </h1>
+                    <GlobalStatusChart
+                        totalActiveCases={totalActiveCases}
+                        totalConfirmed={totalConfirmed}
+                        totalDeaths={totalDeaths}
+                        totalRecovered={totalRecovered}
+                    />
+                    <p className="text-xs text-center text-gray-700 opacity-80 mt-4">Created at {created}</p>
+                </div>
+                }
+                { !totalActiveCases && <p>
+                    LOADING...
+                    </p>
+                }
             </article>
         )
     }

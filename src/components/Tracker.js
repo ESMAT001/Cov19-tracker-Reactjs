@@ -4,7 +4,7 @@ import CountryStatus from './country/CountryStatus';
 import CountriesTable from './CountriesTable';
 import Footer from './Footer';
 import { allCountriesLink } from '../util';
-
+import News from './news/News';
 
 export const CountryCodeContext = React.createContext();
 class Tracker extends Component {
@@ -14,6 +14,7 @@ class Tracker extends Component {
         this.state = {
             data: null,
             country: false,
+            countryName: null,
             show: true
         }
     }
@@ -27,14 +28,14 @@ class Tracker extends Component {
         data = await data.json();
         this.setState({ data: data }, this.handleGetLocation);
     }
-    handleCountryChange = (countryCode) => {
-        this.setState({ country: countryCode })
+    handleCountryChange = (countryCode, countryName) => {
+        this.setState({ country: countryCode, countryName: countryName })
         let bodyTag = document.getElementsByTagName('body')[0].getBoundingClientRect().y;
         let el = document.getElementById("chart").getBoundingClientRect().y;
         window.scrollTo(0, Math.abs(bodyTag) - Math.abs(el))
     }
-    handleGetLocation = (countryCodeFromSearch = false) => {
-        console.log("location");
+    handleGetLocation = (countryCodeFromSearch = false, countryNameFromSearch = false) => {
+        // console.log("location "+countryCodeFromSearch);
         if (!countryCodeFromSearch) {
             if (window.navigator.geolocation) {
                 window.navigator.geolocation.getCurrentPosition(e => {
@@ -50,10 +51,12 @@ class Tracker extends Component {
                         let dataLat = data[i].lat.toFixed(2);
                         let dataLng = data[i].lng.toFixed(2);
                         if (((lat + 4) >= dataLat && (lat - 4) <= dataLat) && (lng + 4) >= dataLng && (lng - 4) <= dataLng) {
-
+                            console.log(data[i]);
+                            console.log('country form location');
                             this.setState({
                                 show: false,
-                                country: data[i].countryCode
+                                country: data[i].countryCode,
+                                countryName: data[i].countryName
                             })
                             break;
                         }
@@ -64,7 +67,8 @@ class Tracker extends Component {
         } else {
             this.setState({
                 show: false,
-                country: countryCodeFromSearch
+                country: countryCodeFromSearch,
+                countryName: countryNameFromSearch
             })
         }
 
@@ -72,31 +76,31 @@ class Tracker extends Component {
     }
     render() {
         const cls = "z-40 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8";
-        console.log(this.state)
+        // console.log(this.state)
         return (
-            <main className="container xl:px-10 2xl:px-40 mx-auto">
-                <div className={cls}>
-                    <CountryCodeContext.Provider value={[this.state.data, this.handleCountryChange, this.state.country]}>
-                        <GlobalStatus />
-                        <CountryStatus
-                            country={this.state.country}
-                            data={this.state.data}
-                            show={this.state.show}
-                            handleGetLocation={this.handleGetLocation}
-                        />
-                        {
-                            this.state.data && <CountriesTable
-                            // handleCountryChange={this.handleCountryChange}
-                            // data={this.state.data}
+            <>
+                <main className="container xl:px-10 2xl:px-40 mx-auto">
+                    <div className={cls}>
+                        <CountryCodeContext.Provider value={[this.state.data, this.handleCountryChange, this.state.country]}>
+                            <GlobalStatus />
+                            <CountryStatus
+                                country={this.state.country}
+                                data={this.state.data}
+                                show={this.state.show}
+                                handleGetLocation={this.handleGetLocation}
                             />
-                        }
-                    </CountryCodeContext.Provider>
-
-                    <Footer />
-
-
-                </div>
-            </main>
+                            {
+                                this.state.data && <CountriesTable
+                                // handleCountryChange={this.handleCountryChange}
+                                // data={this.state.data}
+                                />
+                            }
+                        </CountryCodeContext.Provider>
+                    </div>
+                    <News countryName={this.state.countryName} countryCode={this.state.country} />
+                </main>
+                <Footer />
+            </>
         )
     }
 }

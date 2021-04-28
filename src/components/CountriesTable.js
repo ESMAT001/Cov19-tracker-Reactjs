@@ -41,7 +41,7 @@ function CountriesTable() {
                                 return (
 
                                     <tr className="divide-x divide-blue-700 divide-opacity-75 transition duration-300 ease-in-out cursor-pointer hover:bg-blue-700 hover:bg-opacity-20" key={countryCode + countryName} onClick={() => {
-                                        handleCountryChange(countryCode);
+                                        handleCountryChange(countryCode,countryName);
                                     }}>
 
                                         <td className="flex items-center py-4 pl-4 pr-2" >

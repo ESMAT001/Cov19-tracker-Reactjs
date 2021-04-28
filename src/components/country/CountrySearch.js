@@ -12,7 +12,7 @@ function CountrySearch({ placeholderAnimation, clearPlaceHolder, placeholder, va
             for (let i = 0; i < data.length; i++) {
                 if (data[i].country === val) {
                     console.log('found');
-                    handleGetLocation(data[i].countryCode);
+                    handleGetLocation(data[i].countryCode,data[i].countryName);
                     break;
                 }
             }

@@ -1,10 +1,12 @@
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useRef, useEffect, useState } from "react";
+import React, { Fragment, useRef, useEffect, useState } from "react";
 
-export default function Modal({ newsInfo }) {
+export default function Modal({ newsInfo, id }) {
     let { nid, urlToImage, url, title, publishedAt, siteName, description, content } = newsInfo;
     const [open, setOpen] = useState(false);
     const cancelButtonRef = useRef();
+    const myRef = useRef();
+
 
     function closeModal() {
         setOpen(false);
@@ -63,30 +65,31 @@ export default function Modal({ newsInfo }) {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <div className="inline-block w-full max-w-2xl  p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white dark:bg-darkMode shadow-xl rounded-2xl">
+                            <div className="inline-block w-full max-w-2xl  p-8 my-8 overflow-hidden text-left align-middle transition-all transform bg-darkMode dark:bg-white shadow-xl rounded">
                                 <Dialog.Title
                                     as="h3"
                                     className="text-lg font-medium leading-6 text-gray-900"
                                 >
-                                <img src={urlToImage} alt={title} id="s" />
-                                 </Dialog.Title>
+                                    <img src={urlToImage} className="mx-auto" alt={title} id="s" />
+                                </Dialog.Title>
                                 <div className="mt-2">
                                     <h3>
                                         {title}
                                     </h3>
                                     <p className="text-sm text-gray-500">
-                                       {content}
-                                     </p>
+                                        {content}
+                                    </p>
                                 </div>
 
                                 <div className="mt-4">
                                     <button
+                                        ref={myRef}
                                         type="button"
                                         className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                                         onClick={closeModal}
                                     >
                                         Got it, thanks!
-                  </button>
+                                  </button>
                                 </div>
                             </div>
                         </Transition.Child>

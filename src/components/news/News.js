@@ -41,7 +41,7 @@ function News({ countryName, countryCode }) {
                     <hr className=" md:hidden my-2 bg-gray-500 bg-opacity-70 shadow rounded" />
                     <p className="opacity-80 font-semibold  mt-2">{description}</p>
                     {/* <button className="bg-blue-600 text-white px-3 py-2 font-semibold shadow-lg rounded focus:outline-none hover:shadow-xl hover:bg-blue-700  transition duration-300 float-right mt-6">Read More</button> */}
-                    <Modal newsInfo={news} />
+                    <Modal newsInfo={news} id={nid + "-" + index} />
                 </div>
             </div>
         )

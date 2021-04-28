@@ -13,6 +13,7 @@ export default function Modal({ newsInfo, id }) {
     }
 
     function openModal() {
+        
         setOpen(true);
     }
 
@@ -65,7 +66,7 @@ export default function Modal({ newsInfo, id }) {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <div className="inline-block w-full max-w-2xl  p-8 my-8 overflow-hidden text-left align-middle transition-all transform bg-darkMode dark:bg-white shadow-xl rounded">
+                            <div className="inline-block w-full max-w-2xl  p-8 my-8 overflow-hidden text-left align-middle transition-all transform dark:bg-darkMode bg-white shadow-xl rounded">
                                 <Dialog.Title
                                     as="h3"
                                     className="text-lg font-medium leading-6 text-gray-900"

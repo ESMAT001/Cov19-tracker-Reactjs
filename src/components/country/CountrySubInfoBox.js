@@ -16,13 +16,13 @@ function CountrySubInfoBox({ data, countryCode }) {
         }
     }
 
-    const componentsCls = (color) => {
-        const darkCls = `dark:bg-${color}-800 dark:bg-opacity-30 capitalize `;
+    // const componentsCls = (color) => {
+    //     const darkCls = `dark:bg-${color}-800 dark:bg-opacity-30 capitalize `;
 
-        const lightCls = `text-${color}-600 tex-base sm:text-lg px-2 font-bold w-full text-center py-8 rounded hover:shadow-lg hover:bg-${color}-100 transition duration-300 ease-in-out`
+    //     const lightCls = `text-${color}-600 tex-base sm:text-lg px-2 font-bold w-full text-center py-8 rounded hover:shadow-lg hover:bg-${color}-100 transition duration-300 ease-in-out`
 
-        return lightCls + " " + darkCls
-    }
+    //     return lightCls + " " + darkCls
+    // }
 
     return (
         <div className="w-full mt-4" id="chart">
@@ -36,29 +36,27 @@ function CountrySubInfoBox({ data, countryCode }) {
             <div className="w-ful grid grid-cols-3 gap-2">
                 <Status
                     data={countryData.totalConfirmed}
-                    cls={componentsCls} preCls={'col-span-3'}
+                    preCls={'col-span-3'}
                     color='blue'>
                     Confirmed <i className="far  fa-check text-2xl" ></i>
                 </Status>
                 <Status
                     data={countryData.totalActiveCases}
                     totalConfirmed={countryData.totalConfirmed}
-                    cls={componentsCls}
+                    
                     color='yellow'>
                     Active <i className="far fa-lungs-virus text-2xl"></i>
                 </Status>
                 <Status
                     data={countryData.totalDeaths}
                     totalConfirmed={countryData.totalConfirmed}
-                    cls={componentsCls}
+                    
                     color='red'>
                     Death <i className="far fa-skull text-2xl"></i>
                 </Status>
                 <Status
                     data={countryData.totalRecovered}
                     totalConfirmed={countryData.totalConfirmed}
-                    cls={componentsCls}
-
                     color='green'>
                     Recovered <i className="far fa-heartbeat text-2xl"></i>
                 </Status>

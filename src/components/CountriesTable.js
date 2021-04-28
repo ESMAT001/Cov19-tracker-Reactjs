@@ -14,7 +14,7 @@ function CountriesTable() {
 
     return (
         <>
-            <div className="transition duration-800 ease-in-out w-full shadow-lg overflow-x-scroll md:col-span-2 dark:bg-inputDark border-2 border-blue-300 dark:border-transparent px-2 py-4 rounded dark:text-gray-100 text-gray-700 text-opacity-90 text-center">
+            <div className="transition duration-800 ease-in-out w-full shadow-xl overflow-x-scroll md:col-span-2 dark:bg-inputDark border-4 border-blue-300 dark:border-transparent px-2 py-4 rounded dark:text-gray-100 text-gray-700 text-opacity-90 text-center">
                 <table className="table-fixed min-w-full">
                     <thead>
                         <tr className="text-lg ">
@@ -40,7 +40,7 @@ function CountriesTable() {
                                 lastUpdated = lastUpdated.substring(0, 10);
                                 return (
 
-                                    <tr className="divide-x divide-blue-700 divide-opacity-75 transition duration-300 ease-in-out cursor-pointer hover:bg-blue-700 hover:bg-opacity-20" key={countryCode + countryName} onClick={() => {
+                                    <tr className="divide-x divide-blue-700 divide-opacity-75 transition duration-300 ease-in-out cursor-pointer hover:bg-blue-400 hover:bg-opacity-10 transform hover:scale-105" key={countryCode + countryName} onClick={() => {
                                         handleCountryChange(countryCode,countryName);
                                     }}>
 

@@ -32,13 +32,13 @@ class GlobalStatus extends Component {
 
 
 
-        const componentsCls = (color) => {
-            const darkCls = `dark:bg-${color}-800 dark:bg-opacity-30 capitalize `;
+        // const componentsCls = (color) => {
+        //     const darkCls = `dark:bg-${color}-800  dark:bg-opacity-30 capitalize `;
 
-            const lightCls = `text-${color}-600 tex-base sm:text-lg px-2 font-bold w-full text-center py-8 rounded hover:shadow-lg hover:bg-${color}-100 transition duration-300 ease-in-out`
+        //     const lightCls = `text-${color}-600 tex-base sm:text-lg px-2 font-bold w-full text-center py-8 rounded hover:shadow shadow-lg bg-${color}-200 transition duration-300 ease-in-out`
 
-            return lightCls + " " + darkCls
-        }
+        //     return lightCls + " " + darkCls
+        // }
 
 
 
@@ -47,25 +47,25 @@ class GlobalStatus extends Component {
             <article className="lg:row-span-2 flex flex-col justify-start" >
                 <h1 className={hCls} >Global <i className="fal fa-globe-europe text-blue-500"></i> Status</h1>
                 <div className={cls}>
-                    <Status data={totalConfirmed} cls={componentsCls} preCls={preCls} color='blue'>
+                    <Status data={totalConfirmed} preCls={preCls} color='blue'>
                         Confirmed <i className="far  fa-check text-2xl" ></i>
                     </Status>
-                    <Status data={totalDeaths} totalConfirmed={totalConfirmed} cls={componentsCls} color='red'>
+                    <Status data={totalDeaths} totalConfirmed={totalConfirmed} color='red'>
                         Death <i className="far fa-skull text-2xl"></i>
                     </Status>
-                    <Status data={totalRecovered} totalConfirmed={totalConfirmed} cls={componentsCls} color='green'>
+                    <Status data={totalRecovered} totalConfirmed={totalConfirmed} color='green'>
                         Recovered <i className="far fa-heartbeat text-2xl"></i>
                     </Status>
-                    <Status data={totalActiveCases} totalConfirmed={totalConfirmed} cls={componentsCls} color='yellow'>
+                    <Status data={totalActiveCases} totalConfirmed={totalConfirmed} color='yellow'>
                         Active <i className="far fa-lungs-virus text-2xl"></i>
                     </Status>
-                    <Status data={totalCasesPerMillionPop} cls={componentsCls} color='purple'>
+                    <Status data={totalCasesPerMillionPop} color='purple'>
                         per milion <i className="fas fa-head-side-cough text-2xl"></i>
                     </Status>
-                    <Status data={totalNewCases} cls={componentsCls} color='pink'>
+                    <Status data={totalNewCases} color='pink'>
                         new cases <i className="far fa-ambulance text-2xl"></i>
                     </Status>
-                    <Status data={totalNewDeaths} cls={componentsCls} color='red'>
+                    <Status data={totalNewDeaths} color='red'>
                         new Death <i className="far fa-skull-crossbones text-2xl"></i>
                     </Status>
                 </div>

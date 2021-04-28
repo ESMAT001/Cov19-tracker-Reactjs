@@ -8,3 +8,6 @@ export const allCountriesLink = 'https://api.coronatracker.com/v3/stats/worldome
 export const countryNewsLink = (countryName, countryCode) => {
     return `https://api.coronatracker.com/news/trending?limit=4&offset=0&countryCode=${countryCode}&country=${countryName}&language=en`;
 }
+
+
+export const worldNewsLink='https://api.coronatracker.com/news/trending?limit=6&offset=&language=en';

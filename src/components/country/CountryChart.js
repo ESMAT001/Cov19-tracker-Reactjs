@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 import CountrySubInfoBox from './CountrySubInfoBox';
+import {countryDataLink} from '../../util';
 class CountryChart extends Component {
 
     constructor(props) {
@@ -155,7 +156,7 @@ class CountryChart extends Component {
 
         countryCode = countryCode.toUpperCase();
         let currentDate = new Date().toISOString().slice(0, 10)
-        let data = await fetch(`https://api.coronatracker.com/v5/analytics/trend/country?countryCode=${countryCode}&startDate=2020-01-01&endDate=${currentDate}`);
+        let data = await fetch(countryDataLink(countryCode, currentDate));
         data = await data.json();
         // console.log(data)
         let total_confirmed = [];

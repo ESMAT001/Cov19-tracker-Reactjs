@@ -27,10 +27,12 @@ function CountrySubInfoBox({ data, countryCode }) {
     return (
         <div className="w-full mt-4" id="chart">
             <h2 className="text-gray-600 dark:text-gray-100 py-4 text-center text-lg flex justify-center items-center" >
-                <span className="w-1/4">
+                <span className="w-20 mr-4">
                     <img className="w-full rounded " src={`https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/4x3/${countryData.countryCode.toLocaleLowerCase()}.svg`} alt={`${countryData.countryName}-flag`} />
                 </span>
-                {countryData.countryName} Status </h2>
+               <span className="mr-2 font-bold">
+               {countryData.countryName}  
+               </span> Status </h2>
             <div className="w-ful grid grid-cols-3 gap-2">
                 <Status
                     data={countryData.totalConfirmed}

@@ -3,6 +3,7 @@ import GlobalStatus from './global/GlobalStatus';
 import CountryStatus from './country/CountryStatus';
 import CountriesTable from './CountriesTable';
 import Footer from './Footer';
+import { allCountriesLink } from '../util';
 
 
 export const CountryCodeContext = React.createContext();
@@ -22,9 +23,9 @@ class Tracker extends Component {
 
     }
     getAllCountriesData = async () => {
-        let data = await fetch('https://api.coronatracker.com/v3/stats/worldometer/country')
-        data = await data.json()
-        this.setState({ data: data }, this.handleGetLocation)
+        let data = await fetch(allCountriesLink);
+        data = await data.json();
+        this.setState({ data: data }, this.handleGetLocation);
     }
     handleCountryChange = (countryCode) => {
         this.setState({ country: countryCode })

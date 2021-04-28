@@ -21,7 +21,7 @@ function CountrySearch({ placeholderAnimation, clearPlaceHolder, placeholder, va
 
     return (
         <div className="relative">
-            <label className="absolute top-4 left-3" htmlFor="textInput" onClick={() => {
+            <label className="absolute top-4 left-3 cursor-pointer" htmlFor="textInput" onClick={() => {
                 handleTextInputChange('', true);
                 findCountry(inputRef.current.value);
             }}>

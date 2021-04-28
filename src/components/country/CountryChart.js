@@ -189,11 +189,11 @@ class CountryChart extends Component {
         total_deaths.push(data[data.length - 1].total_deaths - data[data.length - 2].total_deaths)
         total_recovered.push(data[data.length - 1].total_recovered - data[data.length - 2].total_recovered)
         x = Math.ceil(data.length / cols)
-        last_updated.push(data[0].last_updated.slice(0, 10));
+        last_updated.push(data[0].last_updated.slice(2, 10));
         for (let i = x; i < data.length; i += x) {
-            last_updated.push(data[i].last_updated.slice(0, 10))
+            last_updated.push(data[i].last_updated.slice(2, 10))
         }
-        last_updated.push(data[data.length - 1].last_updated.slice(0, 10));
+        last_updated.push(data[data.length - 1].last_updated.slice(2, 10));
         this.setState({
             show: true,
             chart1: {

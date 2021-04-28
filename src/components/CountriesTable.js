@@ -40,7 +40,7 @@ function CountriesTable() {
                                 lastUpdated = lastUpdated.substring(0, 10);
                                 return (
 
-                                    <tr className="divide-x divide-blue-700 divide-opacity-75 transition duration-300 ease-in-out cursor-pointer hover:bg-blue-400 hover:bg-opacity-10 transform hover:scale-105" key={countryCode + countryName} onClick={() => {
+                                    <tr className="transition duration-300 ease-in-out cursor-pointer hover:bg-blue-400 hover:bg-opacity-10 transform hover:scale-105" key={countryCode + countryName} onClick={() => {
                                         handleCountryChange(countryCode,countryName);
                                     }}>
 

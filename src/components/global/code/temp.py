@@ -28,3 +28,16 @@ elif x1==9 and x2==10:
 elif x1==10 and x2==11:
 	print(x1+x2)
 #--IM_ES_N --
+elif x1==11 and x2==12:
+	print(x1+x2)
+elif x1==12 and x2==13:
+	print(x1+x2)
+elif x1==13 and x2==14:
+	print(x1+x2)
+elif x1==14 and x2==15:
+	print(x1+x2)
+elif x1==15 and x2==16:
+	print(x1+x2)
+elif x1==16 and x2==17:
+	print(x1+x2)
+#--IM_ES_N --

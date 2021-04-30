@@ -1415,3 +1415,242 @@ elif x1==699 and x2==700:
 elif x1==700 and x2==701:
 	print(x1+x2)
 #--IM_ES_N --
+elif x1==701 and x2==702:
+	print(x1+x2)
+elif x1==702 and x2==703:
+	print(x1+x2)
+elif x1==703 and x2==704:
+	print(x1+x2)
+elif x1==704 and x2==705:
+	print(x1+x2)
+elif x1==705 and x2==706:
+	print(x1+x2)
+elif x1==706 and x2==707:
+	print(x1+x2)
+elif x1==707 and x2==708:
+	print(x1+x2)
+elif x1==708 and x2==709:
+	print(x1+x2)
+elif x1==709 and x2==710:
+	print(x1+x2)
+elif x1==710 and x2==711:
+	print(x1+x2)
+elif x1==711 and x2==712:
+	print(x1+x2)
+elif x1==712 and x2==713:
+	print(x1+x2)
+elif x1==713 and x2==714:
+	print(x1+x2)
+elif x1==714 and x2==715:
+	print(x1+x2)
+elif x1==715 and x2==716:
+	print(x1+x2)
+elif x1==716 and x2==717:
+	print(x1+x2)
+elif x1==717 and x2==718:
+	print(x1+x2)
+elif x1==718 and x2==719:
+	print(x1+x2)
+elif x1==719 and x2==720:
+	print(x1+x2)
+elif x1==720 and x2==721:
+	print(x1+x2)
+elif x1==721 and x2==722:
+	print(x1+x2)
+elif x1==722 and x2==723:
+	print(x1+x2)
+elif x1==723 and x2==724:
+	print(x1+x2)
+elif x1==724 and x2==725:
+	print(x1+x2)
+elif x1==725 and x2==726:
+	print(x1+x2)
+elif x1==726 and x2==727:
+	print(x1+x2)
+elif x1==727 and x2==728:
+	print(x1+x2)
+elif x1==728 and x2==729:
+	print(x1+x2)
+elif x1==729 and x2==730:
+	print(x1+x2)
+elif x1==730 and x2==731:
+	print(x1+x2)
+elif x1==731 and x2==732:
+	print(x1+x2)
+elif x1==732 and x2==733:
+	print(x1+x2)
+elif x1==733 and x2==734:
+	print(x1+x2)
+elif x1==734 and x2==735:
+	print(x1+x2)
+elif x1==735 and x2==736:
+	print(x1+x2)
+elif x1==736 and x2==737:
+	print(x1+x2)
+elif x1==737 and x2==738:
+	print(x1+x2)
+elif x1==738 and x2==739:
+	print(x1+x2)
+elif x1==739 and x2==740:
+	print(x1+x2)
+elif x1==740 and x2==741:
+	print(x1+x2)
+elif x1==741 and x2==742:
+	print(x1+x2)
+elif x1==742 and x2==743:
+	print(x1+x2)
+elif x1==743 and x2==744:
+	print(x1+x2)
+elif x1==744 and x2==745:
+	print(x1+x2)
+elif x1==745 and x2==746:
+	print(x1+x2)
+elif x1==746 and x2==747:
+	print(x1+x2)
+elif x1==747 and x2==748:
+	print(x1+x2)
+elif x1==748 and x2==749:
+	print(x1+x2)
+elif x1==749 and x2==750:
+	print(x1+x2)
+elif x1==750 and x2==751:
+	print(x1+x2)
+elif x1==751 and x2==752:
+	print(x1+x2)
+elif x1==752 and x2==753:
+	print(x1+x2)
+elif x1==753 and x2==754:
+	print(x1+x2)
+elif x1==754 and x2==755:
+	print(x1+x2)
+elif x1==755 and x2==756:
+	print(x1+x2)
+elif x1==756 and x2==757:
+	print(x1+x2)
+elif x1==757 and x2==758:
+	print(x1+x2)
+elif x1==758 and x2==759:
+	print(x1+x2)
+elif x1==759 and x2==760:
+	print(x1+x2)
+elif x1==760 and x2==761:
+	print(x1+x2)
+elif x1==761 and x2==762:
+	print(x1+x2)
+elif x1==762 and x2==763:
+	print(x1+x2)
+elif x1==763 and x2==764:
+	print(x1+x2)
+elif x1==764 and x2==765:
+	print(x1+x2)
+elif x1==765 and x2==766:
+	print(x1+x2)
+elif x1==766 and x2==767:
+	print(x1+x2)
+elif x1==767 and x2==768:
+	print(x1+x2)
+elif x1==768 and x2==769:
+	print(x1+x2)
+elif x1==769 and x2==770:
+	print(x1+x2)
+elif x1==770 and x2==771:
+	print(x1+x2)
+elif x1==771 and x2==772:
+	print(x1+x2)
+elif x1==772 and x2==773:
+	print(x1+x2)
+elif x1==773 and x2==774:
+	print(x1+x2)
+elif x1==774 and x2==775:
+	print(x1+x2)
+elif x1==775 and x2==776:
+	print(x1+x2)
+elif x1==776 and x2==777:
+	print(x1+x2)
+elif x1==777 and x2==778:
+	print(x1+x2)
+elif x1==778 and x2==779:
+	print(x1+x2)
+elif x1==779 and x2==780:
+	print(x1+x2)
+elif x1==780 and x2==781:
+	print(x1+x2)
+elif x1==781 and x2==782:
+	print(x1+x2)
+elif x1==782 and x2==783:
+	print(x1+x2)
+elif x1==783 and x2==784:
+	print(x1+x2)
+elif x1==784 and x2==785:
+	print(x1+x2)
+elif x1==785 and x2==786:
+	print(x1+x2)
+elif x1==786 and x2==787:
+	print(x1+x2)
+elif x1==787 and x2==788:
+	print(x1+x2)
+elif x1==788 and x2==789:
+	print(x1+x2)
+elif x1==789 and x2==790:
+	print(x1+x2)
+elif x1==790 and x2==791:
+	print(x1+x2)
+elif x1==791 and x2==792:
+	print(x1+x2)
+elif x1==792 and x2==793:
+	print(x1+x2)
+elif x1==793 and x2==794:
+	print(x1+x2)
+elif x1==794 and x2==795:
+	print(x1+x2)
+elif x1==795 and x2==796:
+	print(x1+x2)
+elif x1==796 and x2==797:
+	print(x1+x2)
+elif x1==797 and x2==798:
+	print(x1+x2)
+elif x1==798 and x2==799:
+	print(x1+x2)
+elif x1==799 and x2==800:
+	print(x1+x2)
+elif x1==800 and x2==801:
+	print(x1+x2)
+elif x1==801 and x2==802:
+	print(x1+x2)
+elif x1==802 and x2==803:
+	print(x1+x2)
+elif x1==803 and x2==804:
+	print(x1+x2)
+elif x1==804 and x2==805:
+	print(x1+x2)
+elif x1==805 and x2==806:
+	print(x1+x2)
+elif x1==806 and x2==807:
+	print(x1+x2)
+elif x1==807 and x2==808:
+	print(x1+x2)
+elif x1==808 and x2==809:
+	print(x1+x2)
+elif x1==809 and x2==810:
+	print(x1+x2)
+elif x1==810 and x2==811:
+	print(x1+x2)
+elif x1==811 and x2==812:
+	print(x1+x2)
+elif x1==812 and x2==813:
+	print(x1+x2)
+elif x1==813 and x2==814:
+	print(x1+x2)
+elif x1==814 and x2==815:
+	print(x1+x2)
+elif x1==815 and x2==816:
+	print(x1+x2)
+elif x1==816 and x2==817:
+	print(x1+x2)
+elif x1==817 and x2==818:
+	print(x1+x2)
+elif x1==818 and x2==819:
+	print(x1+x2)
+elif x1==819 and x2==820:
+	print(x1+x2)
+#--IM_ES_N --

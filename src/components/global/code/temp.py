@@ -1735,3 +1735,96 @@ elif x1==858 and x2==859:
 elif x1==859 and x2==860:
 	print(x1+x2)
 #--IM_ES_N --
+elif x1==860 and x2==861:
+	print(x1+x2)
+elif x1==861 and x2==862:
+	print(x1+x2)
+elif x1==862 and x2==863:
+	print(x1+x2)
+elif x1==863 and x2==864:
+	print(x1+x2)
+elif x1==864 and x2==865:
+	print(x1+x2)
+elif x1==865 and x2==866:
+	print(x1+x2)
+elif x1==866 and x2==867:
+	print(x1+x2)
+elif x1==867 and x2==868:
+	print(x1+x2)
+elif x1==868 and x2==869:
+	print(x1+x2)
+elif x1==869 and x2==870:
+	print(x1+x2)
+elif x1==870 and x2==871:
+	print(x1+x2)
+elif x1==871 and x2==872:
+	print(x1+x2)
+elif x1==872 and x2==873:
+	print(x1+x2)
+elif x1==873 and x2==874:
+	print(x1+x2)
+elif x1==874 and x2==875:
+	print(x1+x2)
+elif x1==875 and x2==876:
+	print(x1+x2)
+elif x1==876 and x2==877:
+	print(x1+x2)
+elif x1==877 and x2==878:
+	print(x1+x2)
+elif x1==878 and x2==879:
+	print(x1+x2)
+elif x1==879 and x2==880:
+	print(x1+x2)
+elif x1==880 and x2==881:
+	print(x1+x2)
+elif x1==881 and x2==882:
+	print(x1+x2)
+elif x1==882 and x2==883:
+	print(x1+x2)
+elif x1==883 and x2==884:
+	print(x1+x2)
+elif x1==884 and x2==885:
+	print(x1+x2)
+elif x1==885 and x2==886:
+	print(x1+x2)
+elif x1==886 and x2==887:
+	print(x1+x2)
+elif x1==887 and x2==888:
+	print(x1+x2)
+elif x1==888 and x2==889:
+	print(x1+x2)
+elif x1==889 and x2==890:
+	print(x1+x2)
+elif x1==890 and x2==891:
+	print(x1+x2)
+elif x1==891 and x2==892:
+	print(x1+x2)
+elif x1==892 and x2==893:
+	print(x1+x2)
+elif x1==893 and x2==894:
+	print(x1+x2)
+elif x1==894 and x2==895:
+	print(x1+x2)
+elif x1==895 and x2==896:
+	print(x1+x2)
+elif x1==896 and x2==897:
+	print(x1+x2)
+elif x1==897 and x2==898:
+	print(x1+x2)
+elif x1==898 and x2==899:
+	print(x1+x2)
+elif x1==899 and x2==900:
+	print(x1+x2)
+elif x1==900 and x2==901:
+	print(x1+x2)
+elif x1==901 and x2==902:
+	print(x1+x2)
+elif x1==902 and x2==903:
+	print(x1+x2)
+elif x1==903 and x2==904:
+	print(x1+x2)
+elif x1==904 and x2==905:
+	print(x1+x2)
+elif x1==905 and x2==906:
+	print(x1+x2)
+#--IM_ES_N --

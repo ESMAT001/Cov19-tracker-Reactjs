@@ -33,3 +33,14 @@ elif x1==14 and x2==15:
 elif x1==15 and x2==16:
 	print(x1+x2)
 """ --IM_ES_N """
+elif x1==16 and x2==17:
+	print(x1+x2)
+elif x1==17 and x2==18:
+	print(x1+x2)
+elif x1==18 and x2==19:
+	print(x1+x2)
+elif x1==19 and x2==20:
+	print(x1+x2)
+elif x1==20 and x2==21:
+	print(x1+x2)
+""" --IM_ES_N """

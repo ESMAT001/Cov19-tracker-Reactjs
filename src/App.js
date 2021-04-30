@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import Tracker from './components/Tracker';
 import lightLogo from './svg/light.svg';
 import darkLogo from './svg/dark.svg';
+import * as _ from './firebase/firebase'; 
+
+
+
+
+
 
 const DarkModeclsinit = true;
 

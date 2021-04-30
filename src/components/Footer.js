@@ -10,9 +10,8 @@ function Footer() {
 
     database.ref(viewsRef).on('value', (snapshot) => {
         const val = snapshot.val();
-        console.log('updating ui')
         if (views !== val)
-            setViews(val)
+            setViews(val);
     })
 
     useEffect(() => {

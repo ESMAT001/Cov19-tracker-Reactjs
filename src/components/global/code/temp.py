@@ -1218,3 +1218,200 @@ elif x1==601 and x2==602:
 elif x1==602 and x2==603:
 	print(x1+x2)
 #--IM_ES_N --
+elif x1==603 and x2==604:
+	print(x1+x2)
+elif x1==604 and x2==605:
+	print(x1+x2)
+elif x1==605 and x2==606:
+	print(x1+x2)
+elif x1==606 and x2==607:
+	print(x1+x2)
+elif x1==607 and x2==608:
+	print(x1+x2)
+elif x1==608 and x2==609:
+	print(x1+x2)
+elif x1==609 and x2==610:
+	print(x1+x2)
+elif x1==610 and x2==611:
+	print(x1+x2)
+elif x1==611 and x2==612:
+	print(x1+x2)
+elif x1==612 and x2==613:
+	print(x1+x2)
+elif x1==613 and x2==614:
+	print(x1+x2)
+elif x1==614 and x2==615:
+	print(x1+x2)
+elif x1==615 and x2==616:
+	print(x1+x2)
+elif x1==616 and x2==617:
+	print(x1+x2)
+elif x1==617 and x2==618:
+	print(x1+x2)
+elif x1==618 and x2==619:
+	print(x1+x2)
+elif x1==619 and x2==620:
+	print(x1+x2)
+elif x1==620 and x2==621:
+	print(x1+x2)
+elif x1==621 and x2==622:
+	print(x1+x2)
+elif x1==622 and x2==623:
+	print(x1+x2)
+elif x1==623 and x2==624:
+	print(x1+x2)
+elif x1==624 and x2==625:
+	print(x1+x2)
+elif x1==625 and x2==626:
+	print(x1+x2)
+elif x1==626 and x2==627:
+	print(x1+x2)
+elif x1==627 and x2==628:
+	print(x1+x2)
+elif x1==628 and x2==629:
+	print(x1+x2)
+elif x1==629 and x2==630:
+	print(x1+x2)
+elif x1==630 and x2==631:
+	print(x1+x2)
+elif x1==631 and x2==632:
+	print(x1+x2)
+elif x1==632 and x2==633:
+	print(x1+x2)
+elif x1==633 and x2==634:
+	print(x1+x2)
+elif x1==634 and x2==635:
+	print(x1+x2)
+elif x1==635 and x2==636:
+	print(x1+x2)
+elif x1==636 and x2==637:
+	print(x1+x2)
+elif x1==637 and x2==638:
+	print(x1+x2)
+elif x1==638 and x2==639:
+	print(x1+x2)
+elif x1==639 and x2==640:
+	print(x1+x2)
+elif x1==640 and x2==641:
+	print(x1+x2)
+elif x1==641 and x2==642:
+	print(x1+x2)
+elif x1==642 and x2==643:
+	print(x1+x2)
+elif x1==643 and x2==644:
+	print(x1+x2)
+elif x1==644 and x2==645:
+	print(x1+x2)
+elif x1==645 and x2==646:
+	print(x1+x2)
+elif x1==646 and x2==647:
+	print(x1+x2)
+elif x1==647 and x2==648:
+	print(x1+x2)
+elif x1==648 and x2==649:
+	print(x1+x2)
+elif x1==649 and x2==650:
+	print(x1+x2)
+elif x1==650 and x2==651:
+	print(x1+x2)
+elif x1==651 and x2==652:
+	print(x1+x2)
+elif x1==652 and x2==653:
+	print(x1+x2)
+elif x1==653 and x2==654:
+	print(x1+x2)
+elif x1==654 and x2==655:
+	print(x1+x2)
+elif x1==655 and x2==656:
+	print(x1+x2)
+elif x1==656 and x2==657:
+	print(x1+x2)
+elif x1==657 and x2==658:
+	print(x1+x2)
+elif x1==658 and x2==659:
+	print(x1+x2)
+elif x1==659 and x2==660:
+	print(x1+x2)
+elif x1==660 and x2==661:
+	print(x1+x2)
+elif x1==661 and x2==662:
+	print(x1+x2)
+elif x1==662 and x2==663:
+	print(x1+x2)
+elif x1==663 and x2==664:
+	print(x1+x2)
+elif x1==664 and x2==665:
+	print(x1+x2)
+elif x1==665 and x2==666:
+	print(x1+x2)
+elif x1==666 and x2==667:
+	print(x1+x2)
+elif x1==667 and x2==668:
+	print(x1+x2)
+elif x1==668 and x2==669:
+	print(x1+x2)
+elif x1==669 and x2==670:
+	print(x1+x2)
+elif x1==670 and x2==671:
+	print(x1+x2)
+elif x1==671 and x2==672:
+	print(x1+x2)
+elif x1==672 and x2==673:
+	print(x1+x2)
+elif x1==673 and x2==674:
+	print(x1+x2)
+elif x1==674 and x2==675:
+	print(x1+x2)
+elif x1==675 and x2==676:
+	print(x1+x2)
+elif x1==676 and x2==677:
+	print(x1+x2)
+elif x1==677 and x2==678:
+	print(x1+x2)
+elif x1==678 and x2==679:
+	print(x1+x2)
+elif x1==679 and x2==680:
+	print(x1+x2)
+elif x1==680 and x2==681:
+	print(x1+x2)
+elif x1==681 and x2==682:
+	print(x1+x2)
+elif x1==682 and x2==683:
+	print(x1+x2)
+elif x1==683 and x2==684:
+	print(x1+x2)
+elif x1==684 and x2==685:
+	print(x1+x2)
+elif x1==685 and x2==686:
+	print(x1+x2)
+elif x1==686 and x2==687:
+	print(x1+x2)
+elif x1==687 and x2==688:
+	print(x1+x2)
+elif x1==688 and x2==689:
+	print(x1+x2)
+elif x1==689 and x2==690:
+	print(x1+x2)
+elif x1==690 and x2==691:
+	print(x1+x2)
+elif x1==691 and x2==692:
+	print(x1+x2)
+elif x1==692 and x2==693:
+	print(x1+x2)
+elif x1==693 and x2==694:
+	print(x1+x2)
+elif x1==694 and x2==695:
+	print(x1+x2)
+elif x1==695 and x2==696:
+	print(x1+x2)
+elif x1==696 and x2==697:
+	print(x1+x2)
+elif x1==697 and x2==698:
+	print(x1+x2)
+elif x1==698 and x2==699:
+	print(x1+x2)
+elif x1==699 and x2==700:
+	print(x1+x2)
+elif x1==700 and x2==701:
+	print(x1+x2)
+#--IM_ES_N --

@@ -38,7 +38,7 @@ function News({ countryName, countryCode }) {
         return (
             <div key={nid + "-" + index} className="bg-gray-400 bg-opacity-10 dark:bg-gray-500 dark:bg-opacity-5 flex flex-col md:flex-row rounded shadow-md hover:shadow-xl transition duration-300 overflow-hidden items-center">
                 <div className="md:w-2/6">
-                    <img src={urlToImage} className="object-cover " alt={title} />
+                    <img src={urlToImage} className="object-cover " alt={title} loading="lazy" />
                 </div>
                 <div className="p-6 md:w-4/6">
                     <h3 className='text-xl font-semibold opacity-90'>{title}</h3>

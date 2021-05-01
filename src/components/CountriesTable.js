@@ -47,7 +47,7 @@ function CountriesTable() {
                                         <td className="flex items-center py-4 pl-4 pr-2" >
                                             {
                                                 countryCode && <span className="w-14">
-                                                    <img className="w-full rounded " src={`https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/4x3/${countryCode}.svg`} alt={`${countryName}-flag`} />
+                                                    <img className="w-full rounded " loading="lazy" src={`https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/4x3/${countryCode}.svg`} alt={`${countryName}-flag`} />
                                                 </span>
                                             }
                                             <span className="ml-2">

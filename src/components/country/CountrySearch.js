@@ -12,7 +12,7 @@ function CountrySearch({ placeholderAnimation, clearPlaceHolder, placeholder, va
             for (let i = 0; i < data.length; i++) {
                 if (data[i].country === val) {
                     // console.log('found');
-                    handleGetLocation(data[i].countryCode,data[i].countryName);
+                    handleGetLocation(data[i].countryCode, data[i].countryName);
                     break;
                 }
             }
@@ -43,7 +43,11 @@ function CountrySearch({ placeholderAnimation, clearPlaceHolder, placeholder, va
                     }
                 }}
                 onFocus={(e) => clearPlaceHolder("")}
-                onBlur={placeholderAnimation}
+                onBlur={() => {
+                    handleTextInputChange('', true);
+                    findCountry(inputRef.current.value);
+                    placeholderAnimation();
+                }}
             />
             {
                 data && <datalist id="countries" className="w-96 bg-red-600">

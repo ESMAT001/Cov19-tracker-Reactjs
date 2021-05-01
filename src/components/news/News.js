@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import { countryNewsLink, worldNewsLink } from '../../util';
-import worldMap from '../../svg/worldMap.svg';
+
 
 
 function News({ countryName, countryCode }) {
     const [countryNewsData, setCountryNewsData] = useState(false);
     const [worldNewsData, setWorldNewsData] = useState(false);
     useEffect(() => {
-        console.log('news fetch data');
+        // console.log('news fetch data');
         const fetchData = async () => {
             let data = await fetch(countryNewsLink(countryName, countryCode));
             data = await data.json();
-            console.log(data);
+            // console.log(data);
             setCountryNewsData(data.items);
         }
         if (countryName) {
@@ -23,26 +23,14 @@ function News({ countryName, countryCode }) {
         const fetchData = async () => {
             let data = await fetch(worldNewsLink);
             data = await data.json();
-            console.log(data.items);
+            // console.log(data.items);
             setWorldNewsData(data.items);
         }
         fetchData()
     }, [])
 
-    useEffect(() => {
-        let el = document.getElementsByClassName("jvectormap-element");
-        for (let i = 0; i < el.length; i++) {
-            el[i].addEventListener("mouseover", (e) => {
-                let v = e.target.getAttribute("data-code");
-                console.log(v);
-            })
-        }
-        return () => {
-            for (let i = 0; i < el.length; i++) {
-                el[i].removeEventListener("mouseover");
-            }
-        }
-    }, [])
+   
+        
 
 
     const renderNews = (news, index) => {

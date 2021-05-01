@@ -4,14 +4,14 @@ import React from 'react'
 const inputRef = React.createRef()
 
 function CountrySearch({ placeholderAnimation, clearPlaceHolder, placeholder, value, handleTextInputChange, data, handleGetLocation }) {
-    const cls = " bg-gray-100 bg-opacity-60  text-gray-700 text-opacity-70 shadow-md focus:shadow-xl rounded py-4 pr-2 pl-12 w-full focus:outline-none transition duration-300 ease-in-out";
-    const darkCls = "dark:bg-inputDark dark:placeholder-gray-300 dark:placeholder-opacity-40 dark:text-gray-300 dark:text-opacity-40";
+    // const cls = " bg-gray-100 bg-opacity-60  text-gray-700 text-opacity-70 shadow-md focus:shadow-xl rounded py-4 pr-2 pl-12 w-full focus:outline-none transition duration-300 ease-in-out";
+    // const darkCls = "dark:bg-inputDark dark:placeholder-gray-300 dark:placeholder-opacity-40 dark:text-gray-300 dark:text-opacity-40";
 
     const findCountry = (val) => {
         if (data) {
             for (let i = 0; i < data.length; i++) {
                 if (data[i].country === val) {
-                    console.log('found');
+                    // console.log('found');
                     handleGetLocation(data[i].countryCode,data[i].countryName);
                     break;
                 }
@@ -33,7 +33,7 @@ function CountrySearch({ placeholderAnimation, clearPlaceHolder, placeholder, va
                 list="countries"
                 ref={inputRef}
                 placeholder={placeholder}
-                className={darkCls + cls}
+                className={"dark:bg-inputDark dark:placeholder-gray-300 dark:placeholder-opacity-40 dark:text-gray-300 dark:text-opacity-40 bg-gray-100 bg-opacity-60  text-gray-700 text-opacity-70 shadow-md focus:shadow-xl rounded py-4 pr-2 pl-12 w-full focus:outline-none transition duration-300 ease-in-out"}
                 value={value}
                 onChange={(e) => handleTextInputChange(e.target.value)}
                 onKeyPress={(e) => {

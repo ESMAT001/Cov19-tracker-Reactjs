@@ -51,8 +51,8 @@ class Tracker extends Component {
                         let dataLat = data[i].lat.toFixed(2);
                         let dataLng = data[i].lng.toFixed(2);
                         if (((lat + 4) >= dataLat && (lat - 4) <= dataLat) && (lng + 4) >= dataLng && (lng - 4) <= dataLng) {
-                            console.log(data[i]);
-                            console.log('country form location');
+                            // console.log(data[i]);
+                            // console.log('country form location');
                             this.setState({
                                 show: false,
                                 country: data[i].countryCode,
@@ -75,12 +75,12 @@ class Tracker extends Component {
 
     }
     render() {
-        const cls = "z-40 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8";
+        // const cls = "z-40 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8";
         // console.log(this.state)
         return (
             <>
                 <main className="container xl:px-10 2xl:px-40 mx-auto">
-                    <div className={cls}>
+                    <div className="z-40 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
                         <CountryCodeContext.Provider value={[this.state.data, this.handleCountryChange, this.state.country]}>
                             <GlobalStatus />
                             <CountryStatus

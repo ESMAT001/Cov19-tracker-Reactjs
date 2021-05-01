@@ -90,10 +90,9 @@ class CountryStatus extends PureComponent {
 
     render() {
         const { inputText, placeholder } = this.state
-        const cls = "w-full row-start-2 lg:row-start-1 lg:col-start-2 lg:row-span-2"
-
+        
         return (
-            <div className={cls}>
+            <div className="w-full row-start-2 lg:row-start-1 lg:col-start-2 lg:row-span-2">
                 <CountrySearch
                     value={inputText}
                     placeholder={placeholder}

@@ -17,7 +17,7 @@ class GlobalStatus extends Component {
     getData = async () => {
         let data = await fetch('https://api.coronatracker.com/v3/stats/worldometer/global')
         data = await data.json()
-        console.log(data)
+        // console.log(data)
         this.setState({
             data: data
         })
@@ -26,11 +26,6 @@ class GlobalStatus extends Component {
     render() {
 
         const { created, totalCasesPerMillionPop, totalActiveCases, totalConfirmed, totalDeaths, totalRecovered, totalNewCases, totalNewDeaths } = this.state.data;
-
-        const cls = "grid grid-cols-2 sm:grid-cols-3 text-white gap-4 mb-4";
-        const hCls = "dark:text-gray-100 text-gray-700 antialiased text-2xl text-center pb-4";
-
-
 
         // const componentsCls = (color) => {
         //     const darkCls = `dark:bg-${color}-800  dark:bg-opacity-30 capitalize `;
@@ -45,8 +40,8 @@ class GlobalStatus extends Component {
         const preCls = " col-span-full";
         return (
             <article className="lg:row-span-2 flex flex-col justify-start" >
-                <h1 className={hCls} >Global <i className="fal fa-globe-europe text-blue-500"></i> Status</h1>
-                <div className={cls}>
+                <h1 className="dark:text-gray-100 text-gray-700 antialiased text-2xl text-center pb-4" >Global <i className="fal fa-globe-europe text-blue-500"></i> Status</h1>
+                <div className="grid grid-cols-2 sm:grid-cols-3 text-white gap-4 mb-4">
                     <Status data={totalConfirmed} preCls={preCls} color='blue'>
                         Confirmed <i className="far  fa-check text-2xl" ></i>
                     </Status>
@@ -70,7 +65,7 @@ class GlobalStatus extends Component {
                     </Status>
                 </div>
                 {totalActiveCases && <div className="h-full flex flex-col justify-center">
-                    <h1 className={hCls} >Global <i className="fal fa-globe-europe text-blue-500"></i> Status chart </h1>
+                    <h1 className="dark:text-gray-100 text-gray-700 antialiased text-2xl text-center pb-4" >Global <i className="fal fa-globe-europe text-blue-500"></i> Status chart </h1>
                     <GlobalStatusChart
                         totalActiveCases={totalActiveCases}
                         totalConfirmed={totalConfirmed}

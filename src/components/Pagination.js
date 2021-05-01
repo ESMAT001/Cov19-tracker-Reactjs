@@ -22,7 +22,7 @@ function Pagination({ page, setCurrentPage, data, perPage }) {
     }
     const last = pages[pages.length - 1];
 
-    const cls = " bg-blue-500 dark:bg-blue-700 dark:text-blue-500 dark:bg-opacity-40 mx-1 px-2 sm:px-3 sm:py-1 text-gray-100 text-lg  rounded shadow-lg focus:outline-none"
+    // const cls = " bg-blue-500 dark:bg-blue-700 dark:text-blue-500 dark:bg-opacity-40 mx-1 px-2 sm:px-3 sm:py-1 text-gray-100 text-lg  rounded shadow-lg focus:outline-none"
     return (
         <div className="md:col-span-2  text-blue-500  mx-auto flex justify-center text-center">
             <button className=" bg-blue-500 dark:bg-blue-700 dark:text-blue-500 dark:bg-opacity-40 mx-1 px-2 sm:px-3 sm:py-1 text-gray-100 text-lg  rounded shadow-lg focus:outline-none" key={1} onClick={() => setCurrentPage(1)}>1</button>

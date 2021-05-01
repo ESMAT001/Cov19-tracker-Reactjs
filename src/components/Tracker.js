@@ -100,6 +100,7 @@ class Tracker extends Component {
                     <News countryName={this.state.countryName} countryCode={this.state.country} />
                 </main>
                 <Footer />
+                <span className="hidden col-span-full  dark:bg-blue-800 bg-blue-200 text-blue-600 dark:bg-red-800 bg-red-200 text-red-600 dark:bg-green-800 bg-green-200 text-green-600 dark:bg-yellow-800 bg-yellow-200 text-yellow-600 dark:bg-purple-800 bg-purple-200 text-purple-600 dark:bg-pink-800 bg-pink-200 text-pink-600 -- bg-blue-600 bg-red-600 bg-green-600 bg-yellow-600 bg-purple-600 bg-pink-600 -- dark:bg-opacity-30 capitalize tex-base sm:text-lg px-2 font-bold w-full text-center py-8 rounded hover:shadow-lg shadow transform hover:scale-105  transition duration-300 ease-in-out" ></span>
             </>
         )
     }

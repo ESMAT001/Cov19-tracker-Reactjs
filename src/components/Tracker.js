@@ -5,6 +5,8 @@ import CountriesTable from './CountriesTable';
 import Footer from './Footer';
 import { allCountriesLink } from '../util';
 import News from './news/News';
+import VaccineDataCountryList from './vaccine/VaccineDataCountryList';
+
 
 export const CountryCodeContext = React.createContext();
 class Tracker extends Component {
@@ -90,13 +92,11 @@ class Tracker extends Component {
                                 handleGetLocation={this.handleGetLocation}
                             />
                             {
-                                this.state.data && <CountriesTable
-                                // handleCountryChange={this.handleCountryChange}
-                                // data={this.state.data}
-                                />
+                                this.state.data && <CountriesTable/>
                             }
                         </CountryCodeContext.Provider>
                     </div>
+                    <VaccineDataCountryList/>
                     <News countryName={this.state.countryName} countryCode={this.state.country} />
                 </main>
                 <Footer />

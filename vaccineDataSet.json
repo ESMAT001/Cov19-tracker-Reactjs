@@ -1,0 +1,977 @@
+[
+    {
+        "location": "Afghanistan",
+        "source": "Government of Afghanistan",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Albania",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinovac, Sputnik V\n"
+    },
+    {
+        "location": "Algeria",
+        "source": "Ministry of Health",
+        "vaccines": "Sputnik V\n"
+    },
+    {
+        "location": "Andorra",
+        "source": "Government of Andorra",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Angola",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Anguilla",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Antigua and Barbuda",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Argentina",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Sinopharm/Beijing, Sputnik V\n"
+    },
+    {
+        "location": "Armenia",
+        "source": "Ministry of Health",
+        "vaccines": "Sputnik V\n"
+    },
+    {
+        "location": "Aruba",
+        "source": "Government of Aruba",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Australia",
+        "source": "Government of Australia via covidlive.com.au",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Austria",
+        "source": "Ministry of Health",
+        "vaccines": "Johnson&Johnson, Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Azerbaijan",
+        "source": "Government of Azerbaijan",
+        "vaccines": "Sinovac\n"
+    },
+    {
+        "location": "Bahamas",
+        "source": "Government of the Bahamas",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Bahrain",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinopharm/Beijing, Sputnik V\n"
+    },
+    {
+        "location": "Bangladesh",
+        "source": "Directorate General of Health Services",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Barbados",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Belarus",
+        "source": "Ministry of Health",
+        "vaccines": "Sputnik V\n"
+    },
+    {
+        "location": "Belgium",
+        "source": "Sciensano",
+        "vaccines": "Johnson&Johnson, Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Belize",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Bermuda",
+        "source": "Government of Bermuda",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Bhutan",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Bolivia",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Sinopharm/Beijing, Sputnik V\n"
+    },
+    {
+        "location": "Bosnia and Herzegovina",
+        "source": "Public Health Institute",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinovac, Sputnik V\n"
+    },
+    {
+        "location": "Botswana",
+        "source": "Ministry of Health and Wellness",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Brazil",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Sinovac\n"
+    },
+    {
+        "location": "Brunei",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Bulgaria",
+        "source": "Ministry of Health",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Cambodia",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Sinopharm/Beijing, Sinovac\n"
+    },
+    {
+        "location": "Cameroon",
+        "source": "Medical Council",
+        "vaccines": "Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Canada",
+        "source": "Official data from provinces via covid19tracker.ca",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Cape Verde",
+        "source": "Government of Cape Verde",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Cayman Islands",
+        "source": "Cayman Islands Government",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Chile",
+        "source": "Department of Statistics and Health Information",
+        "vaccines": "Pfizer/BioNTech, Sinovac\n"
+    },
+    {
+        "location": "China",
+        "source": "National Health Commission",
+        "vaccines": "Sinopharm/Beijing, Sinopharm/Wuhan, Sinovac\n"
+    },
+    {
+        "location": "Colombia",
+        "source": "Ministry of Health",
+        "vaccines": "Pfizer/BioNTech, Sinovac\n"
+    },
+    {
+        "location": "Congo",
+        "source": "Government of the Republic of Congo",
+        "vaccines": "Sinopharm/Beijing, Sputnik V\n"
+    },
+    {
+        "location": "Costa Rica",
+        "source": "Costa Rican Social Security Fund",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Cote d\u00e2\u20ac\u2122Ivoire",
+        "source": "Ministry of Health and Public Hygiene",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Croatia",
+        "source": "Ministry of Health",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Curacao",
+        "source": "Government of Curacao",
+        "vaccines": "Moderna, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Cyprus",
+        "source": "Government of Cyprus",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Czechia",
+        "source": "Ministry of Health",
+        "vaccines": "Johnson&Johnson, Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Democratic Republic of Congo",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Denmark",
+        "source": "Statens Serum Institute",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Djibouti",
+        "source": "Pr\u00c3\u00a9sidence de la R\u00c3\u00a9publique de Djibouti",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Dominica",
+        "source": "Government of Dominica",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Dominican Republic",
+        "source": "Ministry of Public Health",
+        "vaccines": "Oxford/AstraZeneca, Sinovac\n"
+    },
+    {
+        "location": "Ecuador",
+        "source": "Government of Ecuador via Ecuacovid",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinovac\n"
+    },
+    {
+        "location": "Egypt",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Sinopharm/Beijing\n"
+    },
+    {
+        "location": "El Salvador",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinovac\n"
+    },
+    {
+        "location": "England",
+        "source": "Government of the United Kingdom",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Equatorial Guinea",
+        "source": "Ministry of Health",
+        "vaccines": "Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Estonia",
+        "source": "National Health Board",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Eswatini",
+        "source": "Government of Eswatini",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Ethiopia",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Faeroe Islands",
+        "source": "Government of the Faeroe Islands",
+        "vaccines": "Moderna, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Falkland Islands",
+        "source": "Government of the Falkland Islands",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Fiji",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Finland",
+        "source": "Finnish Institute for Health and Welfare",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "France",
+        "source": "Public Health France",
+        "vaccines": "Johnson&Johnson, Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Gabon",
+        "source": "Ministry of Health",
+        "vaccines": "Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Gambia",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Georgia",
+        "source": "Government of Georgia",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Germany",
+        "source": "Robert Koch Institut",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Ghana",
+        "source": "Government of Ghana",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Gibraltar",
+        "source": "Government of Gibraltar",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Greece",
+        "source": "Ministry of Health",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Greenland",
+        "source": "Government of Greenland",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Grenada",
+        "source": "Government of Grenada",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Guatemala",
+        "source": "Ministry of Health",
+        "vaccines": "Moderna, Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Guernsey",
+        "source": "Government of Guernsey",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Guinea",
+        "source": "National Health Security Agency",
+        "vaccines": "Sputnik V\n"
+    },
+    {
+        "location": "Guyana",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Honduras",
+        "source": "Government of Honduras",
+        "vaccines": "Moderna, Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Hong Kong",
+        "source": "Government of Hong Kong",
+        "vaccines": "Pfizer/BioNTech, Sinovac\n"
+    },
+    {
+        "location": "Hungary",
+        "source": "Government of Hungary",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech, Sinopharm/Beijing, Sputnik V\n"
+    },
+    {
+        "location": "Iceland",
+        "source": "Directorate of Health",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "India",
+        "source": "Government of India",
+        "vaccines": "Covaxin, Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Indonesia",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Sinovac\n"
+    },
+    {
+        "location": "Iran",
+        "source": "Government of Iran",
+        "vaccines": "Oxford/AstraZeneca, Sputnik V\n"
+    },
+    {
+        "location": "Iraq",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Ireland",
+        "source": "Heath Service Executive",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Isle of Man",
+        "source": "Isle of Man Government",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Israel (see FAQ)",
+        "source": "Government of Israel",
+        "vaccines": "Moderna, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Italy",
+        "source": "Extraordinary commissioner for the Covid-19 emergency",
+        "vaccines": "Johnson&Johnson, Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Jamaica",
+        "source": "Government of Jamaica",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Japan",
+        "source": "Prime Minister\u00e2\u20ac\u2122s Office",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Jersey",
+        "source": "Government of Jersey",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Jordan",
+        "source": "Government of Jordan",
+        "vaccines": "Pfizer/BioNTech, Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Kazakhstan",
+        "source": "Government of Kazakhstan",
+        "vaccines": "Sputnik V\n"
+    },
+    {
+        "location": "Kenya",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Sputnik V\n"
+    },
+    {
+        "location": "Kosovo",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Kuwait",
+        "source": "Ministry of Health",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Kyrgyzstan",
+        "source": "Ministry of Health",
+        "vaccines": "Sinopharm/Beijing, Sputnik V\n"
+    },
+    {
+        "location": "Laos",
+        "source": "Government of Laos",
+        "vaccines": "Sinopharm/Beijing, Sputnik V\n"
+    },
+    {
+        "location": "Latvia",
+        "source": "National Health Service",
+        "vaccines": "Johnson&Johnson, Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Lebanon",
+        "source": "Government of Lebanon",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinopharm/Beijing, Sputnik V\n"
+    },
+    {
+        "location": "Lesotho",
+        "source": "Government of Lesotho",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Libya",
+        "source": "Government of National Unity",
+        "vaccines": "Oxford/AstraZeneca, Sinovac, Sputnik V\n"
+    },
+    {
+        "location": "Liechtenstein",
+        "source": "Federal Office of Public Health",
+        "vaccines": "Moderna, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Lithuania",
+        "source": "Ministry of Health",
+        "vaccines": "Johnson&Johnson, Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Luxembourg",
+        "source": "Government of Luxembourg",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Macao",
+        "source": "Government of Macao",
+        "vaccines": "Pfizer/BioNTech, Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Malawi",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Malaysia",
+        "source": "Government of Malaysia",
+        "vaccines": "Pfizer/BioNTech, Sinovac\n"
+    },
+    {
+        "location": "Maldives",
+        "source": "Presidency of the Maldives",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Mali",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Malta",
+        "source": "COVID-19 Malta Public Health Response Team",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Mauritania",
+        "source": "Ministry of Health",
+        "vaccines": "Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Mauritius",
+        "source": "National Communication Committee on COVID-19",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Mexico",
+        "source": "Secretary of Health",
+        "vaccines": "CanSino, Oxford/AstraZeneca, Pfizer/BioNTech, Sinovac, Sputnik V\n"
+    },
+    {
+        "location": "Moldova",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Monaco",
+        "source": "National Council",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Mongolia",
+        "source": "Ministry of Health via ikon.mn",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinopharm/Beijing, Sputnik V\n"
+    },
+    {
+        "location": "Montenegro",
+        "source": "Government of Montenegro",
+        "vaccines": "Sinopharm/Beijing, Sputnik V\n"
+    },
+    {
+        "location": "Montserrat",
+        "source": "Government of Montserrat",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Morocco",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Mozambique",
+        "source": "Deputy National Director of Public Health",
+        "vaccines": "Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Myanmar",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Namibia",
+        "source": "Ministry of Health and Social Services",
+        "vaccines": "Oxford/AstraZeneca, Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Nauru",
+        "source": "Government of the Republic of Nauru",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Nepal",
+        "source": "Government of Nepal",
+        "vaccines": "Oxford/AstraZeneca, Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Netherlands",
+        "source": "National Institute for Public Health and the Environment",
+        "vaccines": "Johnson&Johnson, Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "New Zealand",
+        "source": "Ministry of Health",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Nicaragua",
+        "source": "Ministerio de Salud de la Rep\u00c3\u00bablica de Nicaragua",
+        "vaccines": "Oxford/AstraZeneca, Sputnik V\n"
+    },
+    {
+        "location": "Niger",
+        "source": "Government of Niger",
+        "vaccines": "Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Nigeria",
+        "source": "Government of Nigeria",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "North Macedonia",
+        "source": "Government of North Macedonia",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Northern Cyprus",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinovac\n"
+    },
+    {
+        "location": "Northern Ireland",
+        "source": "Government of the United Kingdom",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Norway",
+        "source": "Norwegian Institute of Public Health",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Oman",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Pakistan",
+        "source": "National Command and Operation Centre",
+        "vaccines": "CanSino, Sinopharm/Beijing, Sinovac, Sputnik V\n"
+    },
+    {
+        "location": "Palestine (see FAQ)",
+        "source": "Ministry of Health",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Panama",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Papua New Guinea",
+        "source": "Government of Papua New Guinea",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Paraguay",
+        "source": "Government of Paraguay",
+        "vaccines": "Sputnik V\n"
+    },
+    {
+        "location": "Peru",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Philippines",
+        "source": "Government of the Philippines",
+        "vaccines": "Oxford/AstraZeneca, Sinovac\n"
+    },
+    {
+        "location": "Poland",
+        "source": "Ministry of Health",
+        "vaccines": "Johnson&Johnson, Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Portugal",
+        "source": "Directorate General for Health via Data Science for Social Good",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Qatar",
+        "source": "Ministry of Public Health",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Romania",
+        "source": "Government of Romania",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Russia",
+        "source": "Official data from local governments via gogov.ru",
+        "vaccines": "EpiVacCorona, Sputnik V\n"
+    },
+    {
+        "location": "Rwanda",
+        "source": "Ministry of Health",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Saint Helena",
+        "source": "Government of Saint Helena",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Saint Kitts and Nevis",
+        "source": "Government of Saint Kitts and Nevis",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Saint Lucia",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Saint Vincent and the Grenadines",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Samoa",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "San Marino",
+        "source": "Social Security Institute",
+        "vaccines": "Pfizer/BioNTech, Sputnik V\n"
+    },
+    {
+        "location": "Sao Tome and Principe",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Saudi Arabia",
+        "source": "Saudi Health Council",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Scotland",
+        "source": "Government of the United Kingdom",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Senegal",
+        "source": "Ministry of Health",
+        "vaccines": "Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Serbia",
+        "source": "Government of Serbia",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinopharm/Beijing, Sputnik V\n"
+    },
+    {
+        "location": "Seychelles",
+        "source": "Extended Programme for Immunisation",
+        "vaccines": "Oxford/AstraZeneca, Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Sierra Leone",
+        "source": "Ministry of Health and Sanitation",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Singapore",
+        "source": "Ministry of Health",
+        "vaccines": "Moderna, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Slovakia",
+        "source": "Ministry of Health",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Slovenia",
+        "source": "National Institute of Public Health via Sledilnik",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Solomon Islands",
+        "source": "Government of the Solomon Islands",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Somalia",
+        "source": "Federal Government of Somalia",
+        "vaccines": "Oxford/AstraZeneca, Sinopharm/Beijing\n"
+    },
+    {
+        "location": "South Africa",
+        "source": "Ministry of Health",
+        "vaccines": "Johnson&Johnson\n"
+    },
+    {
+        "location": "South Korea",
+        "source": "Korea Centers for Disease Control and Prevention",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "South Sudan",
+        "source": "Government of South Sudan",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Spain",
+        "source": "Ministry of Health",
+        "vaccines": "Johnson&Johnson, Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Sri Lanka",
+        "source": "Ministry of Health\u00e2\u20ac\u2122s Epidemiology Unit",
+        "vaccines": "Oxford/AstraZeneca, Sinopharm/Beijing\n"
+    },
+    {
+        "location": "Sudan",
+        "source": "Federal Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Suriname",
+        "source": "Government of Suriname",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Sweden",
+        "source": "Public Health Agency of Sweden",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Switzerland",
+        "source": "Federal Office of Public Health",
+        "vaccines": "Moderna, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Syria",
+        "source": "Ministry of Health",
+        "vaccines": "Sputnik V\n"
+    },
+    {
+        "location": "Taiwan",
+        "source": "Taiwan Centers for Disease Control",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Thailand",
+        "source": "Government of Thailand",
+        "vaccines": "Oxford/AstraZeneca, Sinovac\n"
+    },
+    {
+        "location": "Timor",
+        "source": "Government of Timor-Leste",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Togo",
+        "source": "Government of Togo",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Tonga",
+        "source": "Government of Tonga",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Trinidad and Tobago",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Tunisia",
+        "source": "Ministry of Health",
+        "vaccines": "Pfizer/BioNTech, Sinovac, Sputnik V\n"
+    },
+    {
+        "location": "Turkey",
+        "source": "COVID-19 Vaccine Information Platform",
+        "vaccines": "Pfizer/BioNTech, Sinovac\n"
+    },
+    {
+        "location": "Turks and Caicos Islands",
+        "source": "Ministry of Health",
+        "vaccines": "Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Uganda",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Ukraine",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinovac\n"
+    },
+    {
+        "location": "United Arab Emirates",
+        "source": "National Emergency Crisis and Disaster Management Authority",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinopharm/Beijing, Sinopharm/Wuhan, Sputnik V\n"
+    },
+    {
+        "location": "United Kingdom",
+        "source": "Government of the United Kingdom",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "United States",
+        "source": "Centers for Disease Control and Prevention",
+        "vaccines": "Johnson&Johnson, Moderna, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Uruguay",
+        "source": "Ministry of Health",
+        "vaccines": "Oxford/AstraZeneca, Pfizer/BioNTech, Sinovac\n"
+    },
+    {
+        "location": "Uzbekistan",
+        "source": "Government of Uzbekistan",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Venezuela",
+        "source": "Government of Venezuela",
+        "vaccines": "Sputnik V\n"
+    },
+    {
+        "location": "Vietnam",
+        "source": "Government of Vietnam",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Wales",
+        "source": "Government of the United Kingdom",
+        "vaccines": "Moderna, Oxford/AstraZeneca, Pfizer/BioNTech\n"
+    },
+    {
+        "location": "Zambia",
+        "source": "Government of Zambia",
+        "vaccines": "Oxford/AstraZeneca\n"
+    },
+    {
+        "location": "Zimbabwe",
+        "source": "Ministry of Health",
+        "vaccines": "Sinopharm/Beijing"
+    }
+]

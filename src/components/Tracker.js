@@ -34,7 +34,8 @@ class Tracker extends Component {
         this.setState({ country: countryCode, countryName: countryName })
         let bodyTag = document.getElementsByTagName('body')[0].getBoundingClientRect().y;
         let el = document.getElementById("chart").getBoundingClientRect().y;
-        window.scrollTo(0, Math.abs(bodyTag) - Math.abs(el))
+        let calc = (Math.abs(bodyTag) - Math.abs(el)) - ((window.innerHeight * 12) / 100)
+        window.scrollTo(0, calc);
     }
     handleGetLocation = (countryCodeFromSearch = false, countryNameFromSearch = false) => {
         // console.log("location "+countryCodeFromSearch);
@@ -92,11 +93,11 @@ class Tracker extends Component {
                                 handleGetLocation={this.handleGetLocation}
                             />
                             {
-                                this.state.data && <CountriesTable/>
+                                this.state.data && <CountriesTable />
                             }
                         </CountryCodeContext.Provider>
                     </div>
-                    <VaccineDataCountryList/>
+                    <VaccineDataCountryList />
                     <News countryName={this.state.countryName} countryCode={this.state.country} />
                 </main>
                 <Footer />

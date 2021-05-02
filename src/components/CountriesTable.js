@@ -14,21 +14,21 @@ function CountriesTable() {
 
     return (
         <>
-            <div className="transition duration-800 ease-in-out w-full shadow-xl overflow-x-scroll md:col-span-2 dark:bg-inputDark border-4 border-blue-300 dark:border-transparent px-2 py-4 rounded dark:text-gray-100 text-gray-700 text-opacity-90 text-center">
+            <div className="transition duration-800 ease-in-out w-full shadow-xl overflow-x-scroll md:col-span-2 dark:bg-inputDark border-4 border-blue-300 dark:border-transparent pb-4 rounded dark:text-gray-100 text-gray-700 text-opacity-90 text-center">
                 <table className="table-fixed min-w-full">
                     <thead>
-                        <tr className="text-lg ">
-                            <th className="w-1/12">Country</th>
-                            <th className="w-1/12 px-4">Confirmed</th>
-                            <th className="w-1/12 px-4">Active</th>
-                            <th className="w-1/12 px-4">Death</th>
-                            <th className="w-1/12 px-4">Recovered</th>
-                            <th className="w-1/12 px-4">Critical</th>
-                            <th className="w-1/12 px-4">Confirmed per million</th>
-                            <th className="w-1/12 px-4">Death per million</th>
-                            <th className="w-1/12 px-4">Daily confirmed</th>
-                            <th className="w-1/12 px-4">Daily death</th>
-                            <th className="w-2/12">last Updated</th>
+                        <tr className="text-lg bg-gray-300 bg-opacity-80 dark:bg-inputDark">
+                            <th className="w-1/12  text-sm md:text-base">Country</th>
+                            <th className="w-1/12 px-4 text-sm md:text-base">Confirmed</th>
+                            <th className="w-1/12 px-4 text-sm md:text-base">Active</th>
+                            <th className="w-1/12 px-4 text-sm md:text-base">Death</th>
+                            <th className="w-1/12 px-4 text-sm md:text-base">Recovered</th>
+                            <th className="w-1/12 px-4 text-sm md:text-base">Critical</th>
+                            <th className="w-1/12 px-4 text-sm md:text-base">Confirmed per million</th>
+                            <th className="w-1/12 px-4 text-sm md:text-base">Death per million</th>
+                            <th className="w-1/12 px-4 text-sm md:text-base">Daily confirmed</th>
+                            <th className="w-1/12 px-4 text-sm md:text-base">Daily death</th>
+                            <th className="w-2/12 text-sm md:text-base">last Updated</th>
                         </tr>
                     </thead>
                     <tbody className="divide-y divide-blue-700 divide-opacity-75">
@@ -50,38 +50,38 @@ function CountriesTable() {
                                                     <img className="w-full rounded " loading="lazy" src={`https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/4x3/${countryCode}.svg`} alt={`${countryName}-flag`} />
                                                 </span>
                                             }
-                                            <span className="ml-2">
+                                            <span className="ml-2 text-sm md:text-base">
                                                 {countryName}
                                             </span>
                                         </td>
-                                        <td className="px-3 text-blue-600 font-semibold">
+                                        <td className="px-3 text-blue-600 font-semibold text-sm md:text-base">
                                             {totalConfirmed}
                                         </td>
-                                        <td className="px-3 text-yellow-600 font-semibold">
+                                        <td className="px-3 text-yellow-600 font-semibold text-sm md:text-base">
                                             {activeCases}
                                         </td>
-                                        <td className="px-3 text-red-600 font-semibold">
+                                        <td className="px-3 text-red-600 font-semibold text-sm md:text-base">
                                             {totalDeaths}
                                         </td>
-                                        <td className="px-3 text-green-600 font-semibold">
+                                        <td className="px-3 text-green-600 font-semibold text-sm md:text-base">
                                             {totalRecovered}
                                         </td>
-                                        <td className="px-2 text-pink-600 font-semibold">
+                                        <td className="px-2 text-pink-600 font-semibold text-sm md:text-base">
                                             {totalCritical}
                                         </td>
-                                        <td className="px-2 text-purple-600 font-semibold">
+                                        <td className="px-2 text-purple-600 font-semibold text-sm md:text-base">
                                             {totalConfirmedPerMillionPopulation}
                                         </td>
-                                        <td className="px-2 text-indigo-600 font-semibold">
+                                        <td className="px-2 text-indigo-600 font-semibold text-sm md:text-base">
                                             {totalDeathsPerMillionPopulation}
                                         </td>
-                                        <td className="px-2 text-blue-400 font-semibold">
+                                        <td className="px-2 text-blue-400 font-semibold text-sm md:text-base">
                                             {dailyConfirmed}
                                         </td>
-                                        <td className="px-2 text-red-400 font-semibold">
+                                        <td className="px-2 text-red-400 font-semibold text-sm md:text-base">
                                             {dailyDeaths}
                                         </td>
-                                        <td className="px-2">
+                                        <td className="px-2 text-sm md:text-base">
                                             {lastUpdated}
                                         </td>
                                     </tr>

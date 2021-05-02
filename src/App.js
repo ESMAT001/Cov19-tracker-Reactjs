@@ -30,8 +30,8 @@ function App() {
 
   return (
     <div className={isDark ? "dark font-Roboto" : "font-Roboto"}>
-      <div className="dark:bg-darkMode bg-white ">
-        <header className="flex items-center justify-between w-full  float-right clear-both px-8 pt-8">
+      <div className=" ">
+        <header className="flex items-center justify-between w-full  float-right clear-both px-8 pt-8 sticky top-0 dark:bg-darkMode bg-white bg-opacity-90 dark:bg-opacity-90 pb-5  z-50">
           <h1 className="text-gray-700 dark:text-gray-100 md:w-full w-auto font-semibold text-xl sm:text-3xl text-center antialiased " >
             <a href="https://cov19-tracker.web.app">
               COV-19<span><img src={favicon} className="inline-block  mx-auto w-9 sm:w-10 md:w-12 -mt-1 filter" alt="logo" /></span>Tracker

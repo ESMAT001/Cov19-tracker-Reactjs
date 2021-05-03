@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Tracker from './components/Tracker';
 import lightLogo from './svg/light.svg';
 import darkLogo from './svg/dark.svg';
-import * as _ from './firebase/firebase'; 
+import * as _ from './firebase/firebase';
 import favicon from './svg/favicon.png';
 
 
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className={isDark ? "dark font-Roboto" : "font-Roboto"}>
-      <div className=" ">
+      <div className="dark:bg-darkMode bg-white">
         <header className="flex items-center justify-between w-full  float-right clear-both px-8 pt-8 sticky top-0 dark:bg-darkMode bg-white bg-opacity-90 dark:bg-opacity-90 pb-5  z-50">
           <h1 className="text-gray-700 dark:text-gray-100 md:w-full w-auto font-semibold text-xl sm:text-3xl text-center antialiased " >
             <a href="https://cov19-tracker.web.app">

@@ -55,7 +55,8 @@ function VaccineTrialData() {
                         </tbody>
                     </table>
                     <p className="mt-6 mb-2 text-base md:text-lg">Vaccines Info</p>
-                    <div className="transition duration-800 ease-in-out w-full overflow-scroll md:overflow-x-hidden  md:overflow-y-scroll md:col-span-2  dark:border-transparent  pb-4 rounded dark:text-gray-100 text-gray-800  text-center h-96">
+                    <p className="mb-4 text-sm opacity-80">Scroll  on the table to see more data</p>
+                    <div className="hide-scroll-bar transition duration-800 ease-in-out w-full overflow-scroll md:overflow-x-hidden  md:overflow-y-scroll md:col-span-2  dark:border-transparent  pb-4 rounded dark:text-gray-100 text-gray-800  text-center h-96">
                         <table className="w-full">
                             <thead >
                                 <tr className='text-white font-bold dark:bg-inputDark bg-blue-500 dark:bg-opacity-25' >

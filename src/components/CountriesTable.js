@@ -14,7 +14,7 @@ function CountriesTable() {
 
     return (
         <>
-            <div className="transition duration-800 ease-in-out w-full shadow-xl overflow-x-scroll md:col-span-2 dark:bg-inputDark border-4 border-blue-400 dark:border-transparent pb-4 rounded dark:text-gray-100 text-gray-700 text-opacity-90 text-center">
+            <div className="hide-scroll-bar transition duration-800 ease-in-out w-full shadow-xl overflow-x-scroll md:col-span-2 dark:bg-inputDark border-4 border-blue-400 dark:border-transparent pb-4 rounded dark:text-gray-100 text-gray-700 text-opacity-90 text-center">
                 <table className="table-fixed min-w-full">
                     <thead>
                         <tr className="text-lg bg-blue-400 text-white  dark:bg-inputDark">

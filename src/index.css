@@ -13,6 +13,11 @@ html {
   animation: ping 1.45s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
+.hide-scroll-bar::-webkit-scrollbar{
+  display: none;
+}
+
+
 @keyframes ping {
   75%,
   100% {

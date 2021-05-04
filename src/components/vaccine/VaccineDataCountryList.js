@@ -5,8 +5,9 @@ import vaccineCountryListLink from '../../vaccineCountryListLinks.json';
 function VaccineDataCountryList() {
     return (
         <div className="dark:text-gray-100 text-gray-700 antialiased my-10 text-center">
-            <h2 className="text-lg md:text-xl mb-6">Vaccination against COVID-19 has now started in 195 locations.</h2>
-            <div className="transition duration-800 ease-in-out w-full overflow-scroll md:overflow-x-hidden  md:overflow-y-scroll md:col-span-2  dark:border-transparent  pb-4 rounded dark:text-gray-100 text-gray-800  text-center h-96 ">
+            <h2 className="text-lg md:text-xl mb-1">Vaccination against COVID-19 has now started in 195 locations.</h2>
+            <p className="mb-6 text-sm opacity-80">Scroll  on the table to see more data</p>
+            <div className="hide-scroll-bar transition duration-800 ease-in-out w-full overflow-scroll md:overflow-x-hidden  md:overflow-y-scroll md:col-span-2  dark:border-transparent  pb-4 rounded dark:text-gray-100 text-gray-800  text-center h-96 ">
                 <table className="w-full">
                     <thead >
                         <tr className='text-white font-bold bg-blue-500' >

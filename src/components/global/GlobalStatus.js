@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Status from './Status';
 import GlobalStatusChart from './GlobalStatusChart';
 import loadingSvg from '../../svg/loading.svg';
+import VaccineStatus from './VaccineStatus';
 
 class GlobalStatus extends Component {
     constructor(props) {
@@ -65,14 +66,16 @@ class GlobalStatus extends Component {
                     </Status>
                 </div>
                 {totalActiveCases && <div className="h-full flex flex-col justify-center">
-                    <h1 className="dark:text-gray-100 text-gray-700 antialiased text-2xl text-center pb-4" >Global <i className="fal fa-globe-europe text-blue-500"></i> Status chart </h1>
+                    <h1 className="dark:text-gray-100 text-gray-700 antialiased text-lg text-center my-2" >Global <i className="fal fa-globe-europe text-blue-500"></i> Status chart </h1>
                     <GlobalStatusChart
                         totalActiveCases={totalActiveCases}
                         totalConfirmed={totalConfirmed}
                         totalDeaths={totalDeaths}
                         totalRecovered={totalRecovered}
                     />
-                    <p className="text-xs text-center text-gray-700 opacity-80 mt-4">Created at {created}</p>
+                     <h1 className="dark:text-gray-100 text-gray-700 antialiased text-lg text-center mt-4 mb-2" >Global Vaccine Status chart</h1>
+                    <VaccineStatus/>
+                    <p className="text-xs text-center text-gray-700 opacity-80 mt-1">Created at {created}</p>
                 </div>
                 }
                 { !totalActiveCases && < div className="h-full lg:h-2/4 py-20 flex flex-col justify-center text-gray-500 font-semibold text-center" id="chart">

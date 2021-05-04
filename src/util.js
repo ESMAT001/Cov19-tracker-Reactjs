@@ -17,3 +17,7 @@ export const worldNewsLink=(limit)=>{
 }
 
 export const vaccineTrialDataLink ="https://corona.lmao.ninja/v3/covid-19/vaccine";
+
+
+
+export const vaccineStatusLink ="https://corona.lmao.ninja/v3/covid-19/vaccine/coverage?lastdays=12&fullData=false";

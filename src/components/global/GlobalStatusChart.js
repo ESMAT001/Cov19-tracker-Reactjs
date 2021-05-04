@@ -7,9 +7,6 @@ class GlobalStatusChart extends Component {
         super(props);
         const { totalActiveCases, totalConfirmed, totalDeaths, totalRecovered } = this.props;
 
-
-
-
         this.state = {
             options: {
                 chart: {
@@ -64,7 +61,7 @@ class GlobalStatusChart extends Component {
             ]
         };
     }
-    yaxisShow=()=>{
+    yaxisShow = () => {
         if (window.innerWidth < 500) {
             this.setState({
                 options: {
@@ -100,7 +97,7 @@ class GlobalStatusChart extends Component {
                     }
                 }
             })
-        }else{
+        } else {
             this.setState({
                 options: {
                     chart: {
@@ -139,26 +136,22 @@ class GlobalStatusChart extends Component {
     }
     componentDidMount() {
         this.yaxisShow()
-        window.addEventListener('resize',this.yaxisShow)
+        window.addEventListener('resize', this.yaxisShow)
     }
-    componentWillUnmount(){
+    componentWillUnmount() {
         window.removeEventListener('resize');
     }
     render() {
         try {
             return (
-                <div className="app ">
-                    <div className="row">
-                        <div className="mixed-chart h-96">
-                            <Chart
-                                options={this.state.options}
-                                series={this.state.series}
-                                type="bar"
-                                height="100%"
-                                width="100%"
-                            />
-                        </div>
-                    </div>
+                <div className="mixed-chart h-96">
+                    <Chart
+                        options={this.state.options}
+                        series={this.state.series}
+                        type="bar"
+                        height="100%"
+                        width="100%"
+                    />
                 </div>
             );
         } catch (error) {

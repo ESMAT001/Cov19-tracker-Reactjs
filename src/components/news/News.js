@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { countryNewsLink, worldNewsLink } from '../../util';
-
+import reload from '../../svg/reload.svg';
 
 
 function News({ countryName, countryCode }) {
@@ -78,7 +78,7 @@ function News({ countryName, countryCode }) {
                         countryNewsData.length !== 0 && <button
                             className="bg-blue-600 text-white px-3 py-2 font-semibold shadow-lg rounded focus:outline-none hover:shadow-xl hover:bg-blue-700  transition duration-300 text-center text-sm md:text-base w-44 mx-auto"
                             onClick={() => setNumberOfContryNews(prev => prev + 2)}
-                        >load more <i className="fal fa-redo-alt "></i></button>
+                        >load more <img src={reload} className="w-7 inline" alt="reload icon" /></button>
                     }
                     {
                         ((numberOfContryNews > 2) && (countryNewsData.length !== 0)) && <button
@@ -103,7 +103,7 @@ function News({ countryName, countryCode }) {
                     <button
                         className="bg-blue-600 text-white px-3 py-2 font-semibold shadow-lg rounded focus:outline-none hover:shadow-xl hover:bg-blue-700  transition duration-300 text-center text-sm md:text-base w-44 mx-auto"
                         onClick={() => setNumberOfWorldNews(prev => prev + 2)}
-                    >load more <i className="fal fa-redo-alt"></i>
+                    >load more <img src={reload} className="w-7 inline" alt="reload icon" />
                     </button>
                     {
                         (numberOfWorldNews > 2) && <button

@@ -6,7 +6,7 @@ import Footer from './Footer';
 import { allCountriesLink } from '../util';
 import News from './news/News';
 import VaccineDataCountryList from './vaccine/VaccineDataCountryList';
-
+import VaccineTrialData from './vaccine/VaccineTrialData';
 
 export const CountryCodeContext = React.createContext();
 class Tracker extends Component {
@@ -98,6 +98,7 @@ class Tracker extends Component {
                         </CountryCodeContext.Provider>
                     </div>
                     <VaccineDataCountryList />
+                    <VaccineTrialData />
                     <News countryName={this.state.countryName} countryCode={this.state.country} />
                 </main>
                 <Footer />

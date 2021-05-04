@@ -28,7 +28,7 @@ function Footer() {
                 <a href="https://github.com/ESMAT001" target="blank"><i className="fab fa-github-square text-3xl shadow-xl" ></i></a>
             </div>
             <p className="text-sm opacity-80" >Website views: {views}</p>
-            <p className="text-sm opacity-80" >Copyright <span className="text-2xl" >&#169;</span> {date.getFullYear()} Esmatullah Niazi </p>
+            <p className="text-sm opacity-80" >Copyright <span className="text-2xl" >&#169;</span> {date.getFullYear()} <a href="https://www.facebook.com/esmat001/" target="blank" >Esmatullah Niazi</a></p>
         </div>
 
     )

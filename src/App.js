@@ -34,7 +34,9 @@ function App() {
         <header className="flex items-center justify-between w-full  float-right clear-both px-8 pt-8 sticky top-0 dark:bg-darkMode bg-white bg-opacity-90 dark:bg-opacity-90 pb-5  z-50">
           <h1 className="text-gray-700 dark:text-gray-100 md:w-full w-auto font-semibold text-xl sm:text-3xl text-center antialiased " >
             <a href="https://cov19-tracker.web.app">
-              COV-19<span><img src={favicon} className="inline-block  mx-auto w-9 sm:w-10 md:w-12 -mt-1 filter" alt="logo" /></span>Tracker
+              COV-19<span className="relative ">
+                <img src={favicon} className="animate-ping-custom absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-30 duration-1000" alt="logo" />
+                <img src={favicon} className="inline-block  mx-auto w-9 sm:w-10 md:w-12 -mt-1 filter" alt="logo" /></span>Tracker
          </a>
           </h1>
           <button onClick={handleDarkMode} className="cursor-pointer focus:outline-none">

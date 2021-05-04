@@ -5,9 +5,11 @@ export const countryDataLink = (countryCode, currentDate) => {
 export const allCountriesLink = 'https://api.coronatracker.com/v3/stats/worldometer/country';
 
 
-export const countryNewsLink = (countryName, countryCode) => {
-    return `https://api.coronatracker.com/news/trending?limit=4&offset=0&countryCode=${countryCode}&country=${countryName}&language=en`;
+export const countryNewsLink = (countryName, countryCode,limit) => {
+    return `https://api.coronatracker.com/news/trending?limit=${limit}&offset=0&countryCode=${countryCode}&country=${countryName}&language=en`;
 }
 
 
-export const worldNewsLink='https://api.coronatracker.com/news/trending?limit=6&offset=&language=en';
+export const worldNewsLink=(limit)=>{
+    return `https://api.coronatracker.com/news/trending?limit=${limit}&offset=&language=en`;
+}

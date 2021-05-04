@@ -9,6 +9,18 @@ html {
   scroll-behavior: smooth !important;
 }
 
+.animate-ping-custom {
+  animation: ping 1.45s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
 .flag-icon {
   width: 2.8rem !important;
 }
@@ -62,7 +74,6 @@ html {
   content: "\10f0f9";
 }
 
-
 .fa-skull-crossbones:before {
   content: "\f714";
 }
@@ -75,16 +86,6 @@ html {
 .fad.fa-search:after {
   content: "\10f002";
 }
-
-
-
-
-
-
-
-
-
-
 
 .fa,
 .fab,
@@ -100,7 +101,6 @@ html {
   text-rendering: auto;
   line-height: 1;
 }
-
 
 .sr-only {
   border: 0;

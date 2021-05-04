@@ -6,10 +6,12 @@ import { countryNewsLink, worldNewsLink } from '../../util';
 function News({ countryName, countryCode }) {
     const [countryNewsData, setCountryNewsData] = useState(false);
     const [worldNewsData, setWorldNewsData] = useState(false);
+    const [numberOfContryNews, setNumberOfContryNews] = useState(2);
+    const [numberOfWorldNews, setNumberOfWorldNews] = useState(2);
     useEffect(() => {
         // console.log('news fetch data');
         const fetchData = async () => {
-            let data = await fetch(countryNewsLink(countryName, countryCode));
+            let data = await fetch(countryNewsLink(countryName, countryCode, numberOfContryNews));
             data = await data.json();
             // console.log(data);
             setCountryNewsData(data.items);
@@ -17,22 +19,22 @@ function News({ countryName, countryCode }) {
         if (countryName) {
             fetchData();
         }
-    }, [countryName, countryCode])
+    }, [countryName, countryCode, numberOfContryNews])
 
     useEffect(() => {
         const fetchData = async () => {
-            let data = await fetch(worldNewsLink);
+            let data = await fetch(worldNewsLink(numberOfWorldNews));
             data = await data.json();
             // console.log(data.items);
             setWorldNewsData(data.items);
         }
         fetchData()
-    }, [])
+    }, [numberOfWorldNews])
 
     const renderNews = (news, index) => {
         let { nid, urlToImage, url, publishedAt, siteName, title, description } = news;
         return (
-            <div key={nid + "-" + index} className="bg-gray-400 bg-opacity-10 dark:bg-gray-500 dark:bg-opacity-5 flex flex-col md:flex-row rounded shadow-md hover:shadow-xl transition duration-300 overflow-hidden items-center">
+            <div key={nid + "-" + index} className="bg-gray-400 bg-opacity-10 dark:bg-gray-500 dark:bg-opacity-5 flex flex-col md:flex-row rounded shadow-md hover:shadow-xl transition duration-500 overflow-hidden items-center ">
                 <div className="md:w-2/6">
                     <img src={urlToImage} className="object-cover " alt={title} loading="lazy" />
                 </div>
@@ -56,7 +58,7 @@ function News({ countryName, countryCode }) {
 
     const cls = "flex flex-col space-y-10";
 
-   
+
     return (
         <div className="dark:text-indigo-50 text-gray-600">
             {
@@ -65,9 +67,24 @@ function News({ countryName, countryCode }) {
                         Covid-19 news in {countryName}
                     </h4>
                     {
+                        countryNewsData.length === 0 && <p className="text-base md:text-lg text-center">No news!</p>
+                    }
+                    {
                         countryNewsData.map((news, index) => {
                             return renderNews(news, index);
                         })
+                    }
+                    {
+                        countryNewsData.length !== 0 && <button
+                            className="bg-blue-600 text-white px-3 py-2 font-semibold shadow-lg rounded focus:outline-none hover:shadow-xl hover:bg-blue-700  transition duration-300 text-center text-sm md:text-base w-44 mx-auto"
+                            onClick={() => setNumberOfContryNews(prev => prev + 2)}
+                        >load more <i className="fal fa-redo-alt "></i></button>
+                    }
+                    {
+                        ((numberOfContryNews > 2) && (countryNewsData.length !== 0)) && <button
+                            className="bg-red-600 text-white px-3 py-2 font-semibold shadow-lg rounded focus:outline-none hover:shadow-xl hover:bg-red-700  transition duration-300 text-center text-sm md:text-base w-44 mx-auto"
+                            onClick={() => setNumberOfContryNews(2)}
+                        >show less</button>
                     }
                 </div>
             }
@@ -83,9 +100,20 @@ function News({ countryName, countryCode }) {
                             return renderNews(news, index);
                         })
                     }
+                    <button
+                        className="bg-blue-600 text-white px-3 py-2 font-semibold shadow-lg rounded focus:outline-none hover:shadow-xl hover:bg-blue-700  transition duration-300 text-center text-sm md:text-base w-44 mx-auto"
+                        onClick={() => setNumberOfWorldNews(prev => prev + 2)}
+                    >load more <i className="fal fa-redo-alt"></i>
+                    </button>
+                    {
+                        (numberOfWorldNews > 2) && <button
+                            className="bg-red-600 text-white px-3 py-2 font-semibold shadow-lg rounded focus:outline-none hover:shadow-xl hover:bg-red-700  transition duration-300 text-center text-sm md:text-base w-44 mx-auto"
+                            onClick={() => setNumberOfWorldNews(2)}
+                        >show less</button>
+                    }
                 </div>
             }
-           
+
         </div>
     )
 }

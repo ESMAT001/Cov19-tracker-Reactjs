@@ -115,7 +115,7 @@ class CountryStatus extends PureComponent {
                     this.state.data && !this.state.countryCode && < div className="py-8  lg:py-0 h-full lg:h-2/4 flex flex-col justify-center items-center text-gray-800 dark:text-gray-400 text-center text-sm   md:text-lg px-5 md:px-10" id="chart">
                         <p className="text-opacity-90 text-red-500 font-bold mb-3"> Failed to access your location.</p>
                         <p className="text-opacity-90">If you want to see your country status and data, click on the reload button and allow the location access.</p>
-                        <button onClick={()=>this.props.handleGetLocation()} className="p-4 my-4 focus:outline-none"><img src={reload} className="w-12 opacity-80" alt="reload icon" /></button>
+                        <button onClick={()=>this.props.handleGetLocation()} className="bg-red-500 shadow-lg hover:shadow-xl hover:bg-red-600 transition duration-300 rounded-full p-2 my-4 focus:outline-none"><img src={reload} className="w-8" alt="reload icon" /></button>
                         <p className="text-opacity-90 ">To see other countries status data , search the country name on the search field or click on the country in countries table.</p>
                     </div>
                 }

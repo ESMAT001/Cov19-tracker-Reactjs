@@ -59,17 +59,20 @@ class VaccineStatus extends Component {
 
         this.setState({
             options: {
+                colors: ['#66DA26'],
                 stroke: {
                     curve: 'smooth',
                     width: 2
                 },
                 markers: {
-                    size: 0,
+                    size: 3,
                 },
                 grid: {
-                    show: false
+                    show: false,
                 },
                 chart: {
+                    colors: ['#2E93fA'],
+                    type: 'area',
                     id: "basic-bar",
                     dropShadow: {
                         enabled: true,
@@ -104,11 +107,11 @@ class VaccineStatus extends Component {
     render() {
         try {
             return (
-                <div className="mixed-chart h-96">
+                <div className="mixed-chart h-96 ">
                     <Chart
                         options={this.state.options}
                         series={this.state.series}
-                        type="line"
+                        type="area"
                         height="100%"
                         width="100%"
                     />

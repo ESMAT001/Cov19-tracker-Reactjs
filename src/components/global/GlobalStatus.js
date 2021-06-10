@@ -3,7 +3,7 @@ import Status from './Status';
 import GlobalStatusChart from './GlobalStatusChart';
 import loadingSvg from '../../svg/loading.svg';
 import VaccineStatus from './VaccineStatus';
-
+import {global} from '../../util';
 class GlobalStatus extends Component {
     constructor(props) {
         super(props)
@@ -16,9 +16,8 @@ class GlobalStatus extends Component {
     }
 
     getData = async () => {
-        let data = await fetch('https://api.coronatracker.com/v3/stats/worldometer/global')
+        let data = await fetch(global)
         data = await data.json()
-        // console.log(data)
         this.setState({
             data: data
         })
@@ -27,15 +26,6 @@ class GlobalStatus extends Component {
     render() {
 
         const { created, totalCasesPerMillionPop, totalActiveCases, totalConfirmed, totalDeaths, totalRecovered, totalNewCases, totalNewDeaths } = this.state.data;
-
-        // const componentsCls = (color) => {
-        //     const darkCls = `dark:bg-${color}-800  dark:bg-opacity-30 capitalize `;
-
-        //     const lightCls = `text-${color}-600 tex-base sm:text-lg px-2 font-bold w-full text-center py-8 rounded hover:shadow shadow-lg bg-${color}-200 transition duration-300 ease-in-out`
-
-        //     return lightCls + " " + darkCls
-        // }
-
 
 
         const preCls = " col-span-full";

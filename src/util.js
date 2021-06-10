@@ -1,7 +1,7 @@
 const baseURI = 'https://api-cov19-tracker.herokuapp.com';
 
 
-export const global='https://api.coronatracker.com/v3/stats/worldometer/global';
+export const global = baseURI + '/global';
 
 export const countryDataLink = (countryCode, currentDate) => {
     return baseURI + `/analytics?countryCode=${countryCode}&endDate=${currentDate}`;

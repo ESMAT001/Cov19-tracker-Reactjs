@@ -3,7 +3,7 @@ const baseURI = 'https://api-cov19-tracker.herokuapp.com';
 
 
 export const countryDataLink = (countryCode, currentDate) => {
-    return `https://api.coronatracker.com/v5/analytics/trend/country?countryCode=${countryCode}&startDate=2020-01-01&endDate=${currentDate}`;
+    return baseURI + `/analytics?countryCode=${countryCode}&endDate=${currentDate}`;
 }
 
 export const allCountriesLink = baseURI + '/country';

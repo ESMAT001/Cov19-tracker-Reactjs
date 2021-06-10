@@ -28,6 +28,7 @@ class Tracker extends Component {
     getAllCountriesData = async () => {
         let data = await fetch(allCountriesLink);
         data = await data.json();
+        console.log(data)
         this.setState({ data: data }, this.handleGetLocation);
     }
     handleCountryChange = (countryCode, countryName) => {
